@@ -444,7 +444,7 @@
             "super": ["group"],
             "props": ["aria-orientation"]
         },
-        "toolip":
+        "tooltip":
         {
             "super": ["section"],
             "props": null
