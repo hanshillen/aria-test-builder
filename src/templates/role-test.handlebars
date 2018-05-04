@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for {{title}}</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    {{#each elementsToTest as |elementToTest elementIndex|}}
+    <header>
+    <h1>ARIA in HTML - test cases for {{elementToTest.name}}</h1>
+    <p>Last updated: {{getDate}}</p>
+    {{#allowedRolesSection @key elementToTest.allowedRoles}} {{#if isRoleListNeeded}}
+    <p>
+      <a href="https://w3c.github.io/html-aria/#{{elementId}}">Allowed Roles</a>:</p>
+    <ul class="roleSummaryList">
+      {{#each elementToTest.allowedRoles as |role roleIndex|}}
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-{{role}}">{{role}}</a>
+        {{#unless @last}} , {{/unless}}
+      </li>
+      {{/each}}
+    </ul>
+    {{else}}
+    <p>
+      <a href="https://w3c.github.io/html-aria/#{{elementToTest.elementId}}">Allowed Roles</a>: {{roleLink}}
+    </p>
+  
+    {{/if}} {{/allowedRolesSection}}
+    </header>
+    <main>
+    <h2>Tests</h2>
+    {{#each ../ariaJSON.categories as |roleCategory roleCategoryIndex|}}
+    <section class="clearFix">
+      <h3>{{roleCategory.name}}</h3>
+      {{#testlist roleCategory.id ../../ariaJSON ../allowedRoles @../key}}
+      <section class="widgetDemo">
+        <h4>role=&quot;{{role}}&quot; ({{#if roleAllowed}}
+          <span class="allowed">Allowed</span>
+          {{else}}
+          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          {{/if}})
+          {{validatorTestResult}}
+        </h4>
+        {{testElement elementId role false roleIndex}}
+      </section>
+      {{/testlist}}
+    </section>
+    
+    {{/each}} </main>{{/each}}
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>

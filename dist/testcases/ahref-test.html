@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;a&gt; with href</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;a&gt; with href</h1>
+    <p>Last updated: 04 May 2018 16:43:58</p>
+     
+    <p>
+      <a href="https://w3c.github.io/html-aria/#ahref">Allowed Roles</a>:</p>
+    <ul class="roleSummaryList">
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-button">button</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-checkbox">checkbox</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-menuitem">menuitem</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-menuitemcheckbox">menuitemcheckbox</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-menuitemradio">menuitemradio</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-option">option</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-radio">radio</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-switch">switch</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-tab">tab</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-treeitem">treeitem</a>
+        
+      </li>
+    </ul>
+ 
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <a href='#' role='button' class='role-test button-test ahref-test' id='ahref-button-0-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <a href='#' role='checkbox' class='role-test checkbox-test ahref-test' id='ahref-checkbox-1-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='gridcell' class='role-test gridcell-test ahref-test' id='ahref-gridcell-2-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='link' class='role-test link-test ahref-test' id='ahref-link-3-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <a href='#' role='menuitem' class='role-test menuitem-test ahref-test' id='ahref-menuitem-4-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <a href='#' role='menuitemcheckbox' class='role-test menuitemcheckbox-test ahref-test' id='ahref-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <a href='#' role='menuitemradio' class='role-test menuitemradio-test ahref-test' id='ahref-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <a href='#' role='option' class='role-test option-test ahref-test' id='ahref-option-7-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='progressbar' class='role-test progressbar-test ahref-test' id='ahref-progressbar-8-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <a href='#' role='radio' class='role-test radio-test ahref-test' id='ahref-radio-9-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='scrollbar' class='role-test scrollbar-test ahref-test' id='ahref-scrollbar-10-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='searchbox' class='role-test searchbox-test ahref-test' id='ahref-searchbox-11-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='separator' class='role-test separator-test ahref-test' id='ahref-separator-12-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='slider' class='role-test slider-test ahref-test' id='ahref-slider-13-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='spinbutton' class='role-test spinbutton-test ahref-test' id='ahref-spinbutton-14-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <a href='#' role='switch' class='role-test switch-test ahref-test' id='ahref-switch-15-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <a href='#' role='tab' class='role-test tab-test ahref-test' id='ahref-tab-16-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='tabpanel' class='role-test tabpanel-test ahref-test' id='ahref-tabpanel-17-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='textbox' class='role-test textbox-test ahref-test' id='ahref-textbox-18-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <a href='#' role='treeitem' class='role-test treeitem-test ahref-test' id='ahref-treeitem-19-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='combobox' class='role-test combobox-test ahref-test' id='ahref-combobox-0-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='grid' class='role-test grid-test ahref-test' id='ahref-grid-1-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='listbox' class='role-test listbox-test ahref-test' id='ahref-listbox-2-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='menu' class='role-test menu-test ahref-test' id='ahref-menu-3-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='menubar' class='role-test menubar-test ahref-test' id='ahref-menubar-4-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='radiogroup' class='role-test radiogroup-test ahref-test' id='ahref-radiogroup-5-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='tablist' class='role-test tablist-test ahref-test' id='ahref-tablist-6-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='tree' class='role-test tree-test ahref-test' id='ahref-tree-7-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='treegrid' class='role-test treegrid-test ahref-test' id='ahref-treegrid-8-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='application' class='role-test application-test ahref-test' id='ahref-application-0-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='article' class='role-test article-test ahref-test' id='ahref-article-1-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='cell' class='role-test cell-test ahref-test' id='ahref-cell-2-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='columnheader' class='role-test columnheader-test ahref-test' id='ahref-columnheader-3-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='definition' class='role-test definition-test ahref-test' id='ahref-definition-4-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='directory' class='role-test directory-test ahref-test' id='ahref-directory-5-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='document' class='role-test document-test ahref-test' id='ahref-document-6-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='feed' class='role-test feed-test ahref-test' id='ahref-feed-7-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='figure' class='role-test figure-test ahref-test' id='ahref-figure-8-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='group' class='role-test group-test ahref-test' id='ahref-group-9-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='heading' class='role-test heading-test ahref-test' id='ahref-heading-10-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='img' class='role-test img-test ahref-test' id='ahref-img-11-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='list' class='role-test list-test ahref-test' id='ahref-list-12-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='listitem' class='role-test listitem-test ahref-test' id='ahref-listitem-13-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='math' class='role-test math-test ahref-test' id='ahref-math-14-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='none' class='role-test none-test ahref-test' id='ahref-none-15-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='note' class='role-test note-test ahref-test' id='ahref-note-16-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='presentation' class='role-test presentation-test ahref-test' id='ahref-presentation-17-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='row' class='role-test row-test ahref-test' id='ahref-row-18-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='rowgroup' class='role-test rowgroup-test ahref-test' id='ahref-rowgroup-19-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='rowheader' class='role-test rowheader-test ahref-test' id='ahref-rowheader-20-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='separator' class='role-test separator-test ahref-test' id='ahref-separator-21-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='table' class='role-test table-test ahref-test' id='ahref-table-22-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='term' class='role-test term-test ahref-test' id='ahref-term-23-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='toolbar' class='role-test toolbar-test ahref-test' id='ahref-toolbar-24-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='tooltip' class='role-test tooltip-test ahref-test' id='ahref-tooltip-25-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='banner' class='role-test banner-test ahref-test' id='ahref-banner-0-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='complementary' class='role-test complementary-test ahref-test' id='ahref-complementary-1-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='contentinfo' class='role-test contentinfo-test ahref-test' id='ahref-contentinfo-2-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='form' class='role-test form-test ahref-test' id='ahref-form-3-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='main' class='role-test main-test ahref-test' id='ahref-main-4-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='navigation' class='role-test navigation-test ahref-test' id='ahref-navigation-5-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='region' class='role-test region-test ahref-test' id='ahref-region-6-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='search' class='role-test search-test ahref-test' id='ahref-search-7-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='alert' class='role-test alert-test ahref-test' id='ahref-alert-0-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='log' class='role-test log-test ahref-test' id='ahref-log-1-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='marquee' class='role-test marquee-test ahref-test' id='ahref-marquee-2-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='status' class='role-test status-test ahref-test' id='ahref-status-3-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='timer' class='role-test timer-test ahref-test' id='ahref-timer-4-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='alertdialog' class='role-test alertdialog-test ahref-test' id='ahref-alertdialog-0-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <a href='#' role='dialog' class='role-test dialog-test ahref-test' id='ahref-dialog-1-test' aria-label='acc name' tabindex='0' ></a>
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>

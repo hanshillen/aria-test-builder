@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Aria Test</title>
+</head>
+<body>
+    {{#each elementsToTest as |elementToTest elementIndex|}}
+      {{#each ../ariaJSON.categories as |roleCategory roleCategoryIndex|}}
+        {{#testlist roleCategory.id ../../ariaJSON ../allowedRoles @../key}}
+          {{testElement elementId role true}}
+        {{/testlist}}
+      {{/each}} 
+    {{/each}}
+</body>
+</html>

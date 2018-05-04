@@ -1,0 +1,941 @@
+{
+  "ahref":
+  {
+    "nodeName": "a",
+    "name": "<a> with href",
+    "markup": "<a href='#'></a>",
+    "allowedRoles": ["button", "checkbox", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab", "treeitem"]
+  },
+  "anohref":
+  {
+    "nodeName": "a",
+    "name": "<a> without href",
+    "markup": "<a></a>",
+    "allowedRoles": "all"
+  },
+
+  "abbr":
+  {
+    "nodeName": "abbr",
+    "name": "<abbr>",
+    "markup": "<abbr></abbr>",
+    "allowedRoles": "all"
+  },
+
+  "address":
+  {
+    "nodeName": "address",
+    "name": "<address>",
+    "markup": "<address></address>",
+    "allowedRoles": "all"
+  },
+  "area":
+  {
+    "nodeName": "area",
+    "name": "<area>",
+    "markup": "<area></area>",
+    "allowedRoles": []
+  },
+  "article":
+  {
+    "nodeName": "article",
+    "name": "<article>",
+    "markup": "<article></article>",
+    "allowedRoles": ["feed", "presentation", "none", "document", "application", "main", "region"]
+  },
+  "aside":
+  {
+    "nodeName": "aside",
+    "name": "<aside>",
+    "markup": "<aside></aside>",
+    "allowedRoles": ["feed", "note", "presentation", "none", "region", "search"]
+  },
+  "audio":
+  {
+    "nodeName": "audio",
+    "name": "<audio>",
+    "markup": "<audio></audio>",
+    "allowedRoles": ["application"]
+  },
+
+  "b":
+  {
+    "nodeName": "b",
+    "name": "<b>",
+    "markup": "<b></b>",
+    "allowedRoles": "all"
+  },
+
+  "base":
+  {
+    "nodeName": "base",
+    "name": "<base>",
+    "markup": "<base></base>",
+    "allowedRoles": []
+  },
+
+  "bdi":
+  {
+    "nodeName": "bdi",
+    "name": "<bdi>",
+    "markup": "<bdi></bdi>",
+    "allowedRoles": "all"
+  },
+  "bdo":
+  {
+    "nodeName": "bdo",
+    "name": "<bdo>",
+    "markup": "<bdo></bdo>",
+    "allowedRoles": "all"
+  },
+
+  "br":
+  {
+    "nodeName": "br",
+    "name": "<br>",
+    "markup": "<br></br>",
+    "allowedRoles": "all"
+  },
+  "button":
+  {
+    "nodeName": "button",
+    "name": "<button>",
+    "markup": "<button></button>",
+    "allowedRoles": ["checkbox", "link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab"]
+  },
+  "buttontypemenu":
+  {
+    "nodeName": "button",
+    "name": "<button type='menu'>",
+    "markup": "<button type='menu'></button>",
+    "allowedRoles": ["menuitem"]
+  },
+  "canvas":
+  {
+    "nodeName": "canvas",
+    "name": "<canvas>",
+    "markup": "<canvas></canvas>",
+    "allowedRoles": "all"
+  },
+  "caption":
+  {
+    "nodeName": "caption",
+    "name": "<caption>",
+    "markup": "<caption></caption>",
+    "allowedRoles": []
+  },
+  "code":
+  {
+    "nodeName": "code",
+    "name": "<code>",
+    "markup": "<code></code>",
+    "allowedRoles": "all"
+  },
+
+  "cite":
+  {
+    "nodeName": "cite",
+    "name": "<cite>",
+    "markup": "<cite></cite>",
+    "allowedRoles": "all"
+  },
+
+  "col-colgroup":
+  {
+    "nodeName": "col",
+    "name": "<col>",
+    "markup": "<col></col>",
+    "allowedRoles": []
+  },
+  "colgroup":
+  {
+    "nodeName": "colgroup",
+    "name": "<colgroup>",
+    "markup": "<colgroup></colgroup>",
+    "allowedRoles": []
+  },
+  "datalist":
+  {
+    "nodeName": "datalist",
+    "name": "<datalist>",
+    "markup": "<datalist></datalist>",
+    "allowedRoles": []
+  },
+  "dd":
+  {
+    "nodeName": "dd",
+    "name": "<dd>",
+    "markup": "<dd></dd>",
+    "allowedRoles": []
+  },
+  "del":
+  {
+    "nodeName": "del",
+    "name": "<del>",
+    "markup": "<del></del>",
+    "allowedRoles": "all"
+  },
+
+  "details":
+  {
+    "nodeName": "details",
+    "name": "<details>",
+    "markup": "<details></details>",
+    "allowedRoles": []
+  },
+
+  "dfn":
+  {
+    "nodeName": "dfn",
+    "name": "<dfn>",
+    "markup": "<dfn></dfn>",
+    "allowedRoles": "all"
+  },
+  "dialog":
+  {
+    "nodeName": "dialog",
+    "name": "<dialog>",
+    "markup": "<dialog></dialog>",
+    "allowedRoles": ["alertdialog"]
+  },
+  "div":
+  {
+    "nodeName": "div",
+    "name": "<div>",
+    "markup": "<div></div>",
+    "allowedRoles": "all"
+  },
+  "dl":
+  {
+    "nodeName": "dl",
+    "name": "<dl>",
+    "markup": "<dl></dl>",
+    "allowedRoles": ["group", "presentation", "none"]
+  },
+  "dt":
+  {
+    "nodeName": "dt",
+    "name": "<dt>",
+    "markup": "<dt></dt>",
+    "allowedRoles": []
+  },
+  "em":
+  {
+    "nodeName": "em",
+    "name": "<em>",
+    "markup": "<em></em>",
+    "allowedRoles": "all"
+  },
+
+  "embed":
+  {
+    "nodeName": "embed",
+    "name": "<embed>",
+    "markup": "<embed></embed>",
+    "allowedRoles": ["application", "document", "presentation", "none", "img"]
+  },
+  "figcaption":
+  {
+    "nodeName": "figcaption",
+    "name": "<figcaption>",
+    "markup": "<figcaption></figcaption>",
+    "allowedRoles": ["group", "presentation", "none"]
+  },
+  "fieldset":
+  {
+    "nodeName": "fieldset",
+    "name": "<fieldset>",
+    "markup": "<fieldset></fieldset>",
+    "allowedRoles": ["group", "none", "presentation"]
+  },
+  "figure":
+  {
+    "nodeName": "figure",
+    "name": "<figure>",
+    "markup": "<figure></figure>",
+    "allowedRoles": ["group", "none", "presentation"]
+  },
+  "footer":
+  {
+    "nodeName": "footer",
+    "name": "<footer>",
+    "markup": "<footer></footer>",
+    "allowedRoles": ["group", "none", "presentation"]
+  },
+  "form":
+  {
+    "nodeName": "form",
+    "name": "<form>",
+    "markup": "<form></form>",
+    "allowedRoles": ["search", "none", "presentation"]
+  },
+  "h1":
+  {
+    "nodeName": "h1",
+    "name": "<h1>",
+    "markup": "<h1></h1>",
+    "allowedRoles": ["tab", "none", "presentation"]
+  },
+  "header":
+  {
+    "nodeName": "header",
+    "name": "<header>",
+    "markup": "<header></header>",
+    "allowedRoles": ["group", "none", "presentation"]
+  },
+  "hr":
+  {
+    "nodeName": "hr",
+    "name": "<hr>",
+    "markup": "<hr></hr>",
+    "allowedRoles": ["none", "presentation"]
+  },
+  "i":
+  {
+    "nodeName": "i",
+    "name": "<i>",
+    "markup": "<i></i>",
+    "allowedRoles": "all"
+  },
+  "iframe":
+  {
+    "nodeName": "iframe",
+    "name": "<iframe>",
+    "markup": "<iframe></iframe>",
+    "allowedRoles": ["application", "document", "img"]
+  },
+  "img-alt":
+  {
+    "nodeName": "imgEmptyAlt",
+    "name": "<imgEmptyAlt>",
+    "markup": "<img alt='' />",
+    "allowedRoles": ["none", "presentation"]
+  },
+  "img":
+  {
+    "nodeName": "imgWithAlt",
+    "name": "<imgWithAlt>",
+    "markup": "<img alt='some text' />",
+    "allowedRoles": "all",
+    "excludedRoles": ["presentation", "none"]
+  },
+  "input-button":
+  {
+    "nodeName": "input",
+    "name": "<input type='Button' />",
+    "markup": "<input type='button'/>",
+    "allowedRoles": ["link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab"]
+  },
+  "input-checkbox":
+  {
+    "nodeName": "input",
+    "name": "<input type='Checkbox' />",
+    "markup": "<input type='checkbox'/>",
+    "allowedRoles": ["button", "menuitemcheckbox", "option", "switch"]
+  },
+  "input-color":
+  {
+    "nodeName": "input",
+    "name": "<input type='Color' />",
+    "markup": "<input type='color'/>",
+    "allowedRoles": []
+  },
+  "input-date":
+  {
+    "nodeName": "input",
+    "name": "<input type='Date' />",
+    "markup": "<input type='date' />",
+    "allowedRoles": []
+  },
+  "input-datetime":
+  {
+    "nodeName": "input",
+    "name": "<input type='DateTime' />",
+    "markup": "<input type='datetime'>",
+    "allowedRoles": []
+  },
+  "input-Email":
+  {
+    "nodeName": "input",
+    "name": "<input type='Email' />",
+    "markup": "<input type='email'/>",
+    "allowedRoles": []
+  },
+  "input-File":
+  {
+    "nodeName": "input",
+    "name": "<input type='File' />",
+    "markup": "<input type='file'/>",
+    "allowedRoles": []
+  },
+  "input-Hidden":
+  {
+    "nodeName": "input",
+    "name": "<input type='Hidden' />",
+    "markup": "<input type=hidden />",
+    "allowedRoles": []
+  },
+  "input-Image":
+  {
+    "nodeName": "input",
+    "name": "<input type='Image' />",
+    "markup": "<input type='image'/>",
+    "allowedRoles": ["link", "menuitem", "menuitemcheckbox", "menuitemradio", "radio", "switch"]
+  },
+  "input-Month":
+  {
+    "nodeName": "input",
+    "name": "<input type='Month' />",
+    "markup": "<input type='month'/>",
+    "allowedRoles": []
+  },
+  "input-Number":
+  {
+    "nodeName": "input",
+    "name": "<input type='Number' />",
+    "markup": "<input type='number'/>",
+    "allowedRoles": []
+  },
+  "input-Password":
+  {
+    "nodeName": "input",
+    "name": "<input type='Password' />",
+    "markup": "<input type='password'/>",
+    "allowedRoles": []
+  },
+  "input-Radio":
+  {
+    "nodeName": "input",
+    "name": "<input type='Radio' />",
+    "markup": "<input type='radio'/>",
+    "allowedRoles": ["menuitemradio"]
+  },
+  "input-Range":
+  {
+    "nodeName": "input",
+    "name": "<input type='Range' />",
+    "markup": "<input type='range'/>",
+    "allowedRoles": []
+  },
+  "input-Reset":
+  {
+    "nodeName": "input",
+    "name": "<input type='Reset' />",
+    "markup": "<input type='reset'/>",
+    "allowedRoles": []
+  },
+  "input-Search":
+  {
+    "nodeName": "input",
+    "name": "<input type='Search' />",
+    "markup": "<input type='search'/>",
+    "allowedRoles": []
+  },
+  "input-Submit":
+  {
+    "nodeName": "input",
+    "name": "<input type='Submit' />",
+    "markup": "<input type='submit'/>",
+    "allowedRoles": []
+  },
+  "input-Tel":
+  {
+    "nodeName": "input",
+    "name": "<input type='Tel' />",
+    "markup": "<input type='tel'/>",
+    "allowedRoles": []
+  },
+  "input-Text":
+  {
+    "nodeName": "input",
+    "name": "<input type='Text' />",
+    "markup": "<input type='text'/>",
+    "allowedRoles": []
+  },
+  "input-Time":
+  {
+    "nodeName": "input",
+    "name": "<input type='Time' />",
+    "markup": "<input type='time'/>",
+    "allowedRoles": []
+  },
+  "input-Url":
+  {
+    "nodeName": "input",
+    "name": "<input type='Url' />",
+    "markup": "<input type='url'/>",
+    "allowedRoles": []
+  },
+  "input-Week":
+  {
+    "nodeName": "input",
+    "name": "<input type='Week' />",
+    "markup": "<input type='week'/>",
+    "allowedRoles": []
+  },
+  "ins-del":
+  {
+    "nodeName": "ins",
+    "name": "<ins>",
+    "markup": "<ins></ins>",
+    "allowedRoles": "all"
+  },
+  "del":
+  {
+    "nodeName": "del",
+    "name": "<del>",
+    "markup": "<del></del>",
+    "allowedRoles": "all"
+  },
+  "kbd":
+  {
+    "nodeName": "kbd",
+    "name": "<kbd>",
+    "markup": "<kbd></kbd>",
+    "allowedRoles": "all"
+  },
+
+  "keygen":
+  {
+    "nodeName": "keygen",
+    "name": "<keygen>",
+    "markup": "<keygen></keygen>",
+    "allowedRoles": []
+  },
+  "label":
+  {
+    "nodeName": "label",
+    "name": "<label>",
+    "markup": "<label></label>",
+    "allowedRoles": []
+  },
+  "legend":
+  {
+    "nodeName": "legend",
+    "name": "<legend>",
+    "markup": "<legend></legend>",
+    "allowedRoles": []
+  },
+  "li":
+  {
+    "nodeName": "li",
+    "name": "<li>",
+    "markup": "<li></li>",
+    "allowedRoles": ["menuitem", "menuitemcheckbox", "menuitemradio", "option", "none", "presentation", "radio", "separator", "tab", "treeitem"]
+  },
+  "link":
+  {
+    "nodeName": "link",
+    "name": "<link>",
+    "markup": "<link></link>",
+    "allowedRoles": []
+  },
+  "main":
+  {
+    "nodeName": "main",
+    "name": "<main>",
+    "markup": "<main></main>",
+    "allowedRoles": []
+  },
+  "map":
+  {
+    "nodeName": "map",
+    "name": "<map>",
+    "markup": "<map></map>",
+    "allowedRoles": []
+  },
+
+  "mark":
+  {
+    "nodeName": "mark",
+    "name": "<mark>",
+    "markup": "<mark></mark>",
+    "allowedRoles": "all"
+  },
+  "math":
+  {
+    "nodeName": "math",
+    "name": "<math>",
+    "markup": "<math></math>",
+    "allowedRoles": []
+  },
+  "menu-context":
+  {
+    "nodeName": "menu",
+    "name": "<menu type='context'>",
+    "markup": "<menu type='context'></menu>",
+    "allowedRoles": []
+  },
+  "menuitem-command":
+  {
+    "nodeName": "menuitem",
+    "name": "<menuitem type='command'>",
+    "markup": "<menuitem type='command'></menuitem>",
+    "allowedRoles": []
+  },
+  "menuitem-checkbox":
+  {
+    "nodeName": "menuitem",
+    "name": "<menuitem type='checkbox'>",
+    "markup": "<menuitem type='checkbox'></menuitem>",
+    "allowedRoles": []
+  },
+  "menuitem-radio":
+  {
+    "nodeName": "menuitem",
+    "name": "<menuitem type='radio'>",
+    "markup": "<menuitem type='radio'></menuitem>",
+    "allowedRoles": []
+  },
+  "meta":
+  {
+    "nodeName": "meta",
+    "name": "<meta>",
+    "markup": "<meta></meta>",
+    "allowedRoles": []
+  },
+  "meter":
+  {
+    "nodeName": "meter",
+    "name": "<meter>",
+    "markup": "<meter></meter>",
+    "allowedRoles": []
+  },
+  "nav":
+  {
+    "nodeName": "nav",
+    "name": "<nav>",
+    "markup": "<nav></nav>",
+    "allowedRoles": []
+  },
+  "noscript":
+  {
+    "nodeName": "noscript",
+    "name": "<noscript>",
+    "markup": "<noscript></noscript>",
+    "allowedRoles": []
+  },
+  "object":
+  {
+    "nodeName": "object",
+    "name": "<object>",
+    "markup": "<object></object>",
+    "allowedRoles": ["application", "document", "img"]
+  },
+  "ol":
+  {
+    "nodeName": "ol",
+    "name": "<ol>",
+    "markup": "<ol></ol>",
+    "allowedRoles": ["directory", "group", "listbox", "menu", "menubar", "none", "presentation", "radiogroup", "tablist", "toolbar", "tree"]
+  },
+  "optgroup":
+  {
+    "nodeName": "optgroup",
+    "name": "<optgroup>",
+    "markup": "<optgroup></optgroup>",
+    "allowedRoles": []
+  },
+  "option":
+  {
+    "nodeName": "option",
+    "name": "<option>",
+    "markup": "<option></option>",
+    "allowedRoles": []
+  },
+  "output":
+  {
+    "nodeName": "output",
+    "name": "<output>",
+    "markup": "<output></output>",
+    "allowedRoles": "all"
+  },
+  "p":
+  {
+    "nodeName": "p",
+    "name": "<p>",
+    "markup": "<p></p>",
+    "allowedRoles": "all"
+  },
+  "param":
+  {
+    "nodeName": "param",
+    "name": "<param>",
+    "markup": "<param></param>",
+    "allowedRoles": []
+  },
+  "picture":
+  {
+    "nodeName": "picture",
+    "name": "<picture>",
+    "markup": "<picture></picture>",
+    "allowedRoles": []
+  },
+  "progress":
+  {
+    "nodeName": "progress",
+    "name": "<progress>",
+    "markup": "<progress></progress>",
+    "allowedRoles": "all"
+  },
+  "q":
+  {
+    "nodeName": "q",
+    "name": "<q>",
+    "markup": "<q></q>",
+    "allowedRoles": "all"
+  },
+  "rp":
+  {
+    "nodeName": "rp",
+    "name": "<rp>",
+    "markup": "<rp></rp>",
+    "allowedRoles": "all"
+  },
+  "rt":
+  {
+    "nodeName": "rt",
+    "name": "<rt>",
+    "markup": "<rt></rt>",
+    "allowedRoles": "all"
+  },
+  "ruby":
+  {
+    "nodeName": "ruby",
+    "name": "<ruby>",
+    "markup": "<ruby></ruby>",
+    "allowedRoles": "all"
+  },
+  "s":
+  {
+    "nodeName": "s",
+    "name": "<s>",
+    "markup": "<s></s>",
+    "allowedRoles": "all"
+  },
+  "samp":
+  {
+    "nodeName": "samp",
+    "name": "<samp>",
+    "markup": "<samp></samp>",
+    "allowedRoles": "all"
+  },
+  "script":
+  {
+    "nodeName": "script",
+    "name": "<script>",
+    "markup": "<script></script>",
+    "allowedRoles": []
+  },
+  "section":
+  {
+    "nodeName": "section",
+    "name": "<section>",
+    "markup": "<section></section>",
+    "allowedRoles": ["alert", "alertdialog", "application", "banner", "complementary", "contentinfo", "dialog", "document", "feed", "log", "main", "marquee", "navigation", "none", "presentation", "search", "status", "tabpanel"]
+  },
+  "select":
+  {
+    "nodeName": "select",
+    "name": "<select> without multiple",
+    "markup": "<select></select>",
+    "allowedRoles": ["menu"]
+  },
+  "select-2":
+  {
+    "nodeName": "select",
+    "name": "<select> with multiple",
+    "markup": "<select multiple></select>",
+    "allowedRoles": []
+  },
+  "small":
+  {
+    "nodeName": "small",
+    "name": "<small>",
+    "markup": "<small></small>",
+    "allowedRoles": "all"
+  },
+  "source":
+  {
+    "nodeName": "source",
+    "name": "<source>",
+    "markup": "<source></source>",
+    "allowedRoles": []
+  },
+  "span":
+  {
+    "nodeName": "span",
+    "name": "<span>",
+    "markup": "<span></span>",
+    "allowedRoles": "all"
+  },
+
+  "strong":
+  {
+    "nodeName": "strong",
+    "name": "<strong>",
+    "markup": "<strong></strong>",
+    "allowedRoles": "all"
+  },
+
+  "style":
+  {
+    "nodeName": "style",
+    "name": "<style>",
+    "markup": "<style></style>",
+    "allowedRoles": []
+  },
+  "svg":
+  {
+    "nodeName": "svg",
+    "name": "<svg>",
+    "markup": "<svg></svg>",
+    "allowedRoles": ["application", "document", "img"]
+  },
+  "sub":
+  {
+    "nodeName": "sub",
+    "name": "<sub>",
+    "markup": "<sub></sub>",
+    "allowedRoles": "all"
+  },
+  "sup":
+  {
+    "nodeName": "sup",
+    "name": "<sup>",
+    "markup": "<sup></sup>",
+    "allowedRoles": "all"
+  },
+
+  "summaryOpen":
+  {
+    "nodeName": "summary",
+    "name": "<summary> with open parent",
+    "markup": "<details open><summary aria-expanded='true' {attributeString}></summary></details>",
+    "allowedRoles": ["button"]
+  },
+  "summaryClosed":
+  {
+    "nodeName": "summary",
+    "name": "<summary> with closed parent",
+    "markup": "<details><summary aria-expanded='false' {attributeString}></summary></details>",
+    "allowedRoles": ["button"]
+  },
+  "table":
+  {
+    "nodeName": "table",
+    "name": "<table>",
+    "markup": "<table></table>",
+    "allowedRoles": "all"
+  },
+  "template":
+  {
+    "nodeName": "template",
+    "name": "<template>",
+    "markup": "<template></template>",
+    "allowedRoles": []
+  },
+  "textarea":
+  {
+    "nodeName": "textarea",
+    "name": "<textarea>",
+    "markup": "<textarea></textarea>",
+    "allowedRoles": []
+  },
+  "tbody":
+  {
+    "nodeName": "tbody",
+    "name": "<tbody>",
+    "markup": "<tbody></tbody>",
+    "allowedRoles": "all"
+  },
+  "tfoot":
+  {
+    "nodeName": "tfoot",
+    "name": "<tfoot>",
+    "markup": "<tfoot></tfoot>",
+    "allowedRoles": "all"
+  },
+  "title":
+  {
+    "nodeName": "title",
+    "name": "<title>",
+    "markup": "<title></title>",
+    "allowedRoles": []
+  },
+  "td":
+  {
+    "nodeName": "td",
+    "name": "<td>",
+    "markup": "<td></td>",
+    "allowedRoles": "all"
+  },
+
+  "th":
+  {
+    "nodeName": "th",
+    "name": "<th>",
+    "markup": "<th></th>",
+    "allowedRoles": "all"
+  },
+  "time":
+  {
+    "nodeName": "time",
+    "name": "<time>",
+    "markup": "<time></time>",
+    "allowedRoles": "all"
+  },
+
+  "tr":
+  {
+    "nodeName": "tr",
+    "name": "<tr>",
+    "markup": "<tr></tr>",
+    "allowedRoles": "all"
+  },
+  "track":
+  {
+    "nodeName": "track",
+    "name": "<track>",
+    "markup": "<track></track>",
+    "allowedRoles": []
+  },
+
+  "u":
+  {
+    "nodeName": "u",
+    "name": "<u>",
+    "markup": "<u></u>",
+    "allowedRoles": "all"
+  },
+  "ul":
+  {
+    "nodeName": "ul",
+    "name": "<ul>",
+    "markup": "<ul></ul>",
+    "allowedRoles": ["directory", "group", "listbox", "menu", "menubar", "radiogroup", "tablist", "toolbar", "tree", "presentation"]
+  },
+  "var":
+  {
+    "nodeName": "var",
+    "name": "<var>",
+    "markup": "<var></var>",
+    "allowedRoles": "all"
+  },
+
+  "video":
+  {
+    "nodeName": "video",
+    "name": "<video>",
+    "markup": "<video></video>",
+    "allowedRoles": ["application"]
+  },
+  "wbr":
+  {
+    "nodeName": "wbr",
+    "name": "<wbr>",
+    "markup": "<wbr></wbr>",
+    "allowedRoles": "all"
+  }
+
+}

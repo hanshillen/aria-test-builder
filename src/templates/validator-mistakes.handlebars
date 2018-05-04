@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Validator Mistakes Report</title>
+  <style>
+      body {
+        background: #f7f7f5;
+        color: #333;
+        font: 400 105%/1.4 "Work Sans", sans-serif;
+        margin: 1.5em;
+      }
+      
+   .valid {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .invalid {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  code {
+    color: navy;
+    font-size: 1.1em;
+  }
+
+  </style>
+</head>
+<body>
+  <h1>Validator Mistakes</h1>
+  <p>Last updated: {{getDate}}</p>
+  {{#each validatorMistakes as |element elementId|}}
+    <h2>{{element.name}}</h2>
+    <ul>
+      <li><a href="testcases/{{elementId}}-test.html">Test Case for {{element.name}}</a></li>
+      <li><a href="validation/{{elementId}}-test.html.json">Validation results for {{element.name}}</a></li>
+    </ul>
+    <h3>Mistakes made by validator:</h3>
+    <ol class="mistakes">
+      {{#each element.mistakes as |mistake index|}}
+        {{#if mistake.falseNegative}}
+        <li><code>role='{{mistake.role}}'</code> <strong>incorrectly</strong> flagged as <strong class="invalid">invalid</strong> for <code>{{mistake.nodeName}}</code> element.</li>
+        {{else}}
+        <li><code>role='{{mistake.role}}'</code> <strong>incorrectly</strong> flagged as <strong class="valid">valid</strong> for <code>{{mistake.nodeName}}</code> element.</li>
+        {{/if}}
+      {{/each}}
+    </ol>
+  {{/each}}
+</body>
+</html>

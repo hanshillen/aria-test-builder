@@ -1,0 +1,602 @@
+{
+    "roles":
+    {
+        "alert":
+        {
+            "super": "section",
+            "props": null
+        },
+        "alertdialog":
+        {
+            "super": ["alert", "dialog"],
+            "props": null
+        },
+        "application":
+        {
+            "super": "structure",
+            "props": "aria-activedescendant"
+        },
+        "article":
+        {
+            "super": ["document"],
+            "props": ["aria-posinset", "aria-setsize"]
+        },
+        "banner":
+        {
+            "super": ["landmark"],
+            "props": null
+        },
+        "button":
+        {
+            "super": ["Command"],
+            "props": ["aria-expanded", "aria-pressed"]
+        },
+        "cell":
+        {
+            "super": ["section"],
+            "props": ["aria-colindex", "aria-colspan", "aria-rowindex", "aria-rowspan"]
+        },
+        "checkbox":
+        {
+            "super": ["input"],
+            "props": ["aria-checked", "aria-readonly"]
+        },
+        "columnheader":
+        {
+            "super": ["cell", "gridcell", "sectionhead"],
+            "props": ["aria-sort"]
+        },
+        "combobox":
+        {
+            "super": ["select"],
+            "props": ["aria-controls",
+                "aria-expanded",
+                "aria-autocomplete",
+                "aria-readonly",
+                "aria-required"
+            ]
+        },
+        "command":
+        {
+            "super": ["widget"],
+            "props": null
+        },
+        "complementary":
+        {
+            "super": ["landmark"],
+            "props": null
+        },
+        "composite":
+        {
+            "super": ["widget"],
+            "props": ["aria-activedescendant"]
+        },
+        "contentinfo":
+        {
+            "super": ["landmark"],
+            "props": null
+        },
+        "definition":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "dialog":
+        {
+            "super": ["window"],
+            "props": null
+        },
+        "directory":
+        {
+            "super": ["list"],
+            "props": null
+        },
+        "document":
+        {
+            "super": ["structure"],
+            "props": ["aria-expanded"]
+        },
+        "feed":
+        {
+            "super": ["list"],
+            "props": null
+        },
+        "figure":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "form":
+        {
+            "super": ["landmark"],
+            "props": null
+        },
+        "grid":
+        {
+            "super": ["composite", "table"],
+            "props": ["aria-level", "aria-multiselectable", "aria-readonly"]
+        },
+        "gridcell":
+        {
+            "super": ["cell", "widget"],
+            "props": ["aria-readonly", "aria-required", "aria-selected"]
+        },
+        "group":
+        {
+            "super": ["section"],
+            "props": ["aria-activedescendant"]
+        },
+        "heading":
+        {
+            "super": ["sectionhead"],
+            "props": ["aria-level"]
+        },
+        "img":
+        {
+            "super": ["section"],
+            "props": null
+        },
+
+        "input":
+        {
+            "super": ["widget"],
+            "props": null
+        },
+        "landmark":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "link":
+        {
+            "super": ["command"],
+            "props": ["aria-expanded"]
+        },
+        "list":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "listbox":
+        {
+            "super": ["select"],
+            "props": ["aria-multiselectable", "aria-readonly", "aria-required"]
+        },
+        "listitem":
+        {
+            "super": ["section"],
+            "props": ["aria-level",
+                "aria-posinset",
+                "aria-setsize"
+            ]
+        },
+        "log":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "main":
+        {
+            "super": ["landmark"],
+            "props": null
+        },
+        "marguee":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "math":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "menu":
+        {
+            "super": ["select"],
+            "props": null
+        },
+        "menubar":
+        {
+            "super": ["menu"],
+            "props": null
+        },
+        "menuitem":
+        {
+            "super": ["command"],
+            "props": ["aria-posinset", "aria-setsize"]
+        },
+        "menuitemcheckbox":
+        {
+            "super": ["checkbox", "menuitem"],
+            "props": null
+        },
+        "menuitemradio":
+        {
+            "super": ["menuitemcheckbox", "radio"],
+            "props": null
+        },
+        "navigation":
+        {
+            "super": ["landmark"],
+            "props": null
+        },
+        "none":
+        {
+            "super": ["structure"],
+            "props": null
+        },
+        "note":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "option":
+        {
+            "super": ["input"],
+            "props": ["aria-selected",
+                "aria-checked",
+                "aria-posinset",
+                "aria-setsize"
+            ]
+        },
+        "presentation":
+        {
+            "super": ["structure"],
+            "props": null
+        },
+        "progressbar":
+        {
+            "super": ["range"],
+            "props": null
+        },
+        "radio":
+        {
+            "super": ["input"],
+            "props": ["aria-checked",
+                "aria-posinset",
+                "aria-setsize"
+            ]
+        },
+        "radiogroup":
+        {
+            "super": ["select"],
+            "props": ["aria-readonly", "aria-required"]
+        },
+        "range":
+        {
+            "super": ["widget"],
+            "props": ["aria-valuemax",
+                "aria-valuemin",
+                "aria-valuenow",
+                "aria-valuetext"
+            ]
+        },
+        "region":
+        {
+            "super": ["landmark"],
+            "props": null
+        },
+        "roletype":
+        {
+            "super": null,
+            "props": [
+                "aria-atomic",
+                "aria-busy",
+                "aria-controls",
+                "aria-current",
+                "aria-describedby",
+                "aria-details",
+                "aria-disabled",
+                "aria-dropeffect",
+                "aria-errormessage",
+                "aria-flowto",
+                "aria-grabbed",
+                "aria-haspopup",
+                "aria-hidden",
+                "aria-invalid",
+                "aria-keyshortcuts",
+                "aria-label",
+                "aria-labelledby",
+                "aria-live",
+                "aria-owns",
+                "aria-relevant",
+                "aria-roledescription"
+            ]
+        },
+        "row":
+        {
+            "super": ["group", "widget"],
+            "props": ["aria-colindex",
+                "aria-level",
+                "aria-rowindex",
+                "aria-selected"
+            ]
+        },
+        "rowgroup":
+        {
+            "super": ["structure"],
+            "props": null
+        },
+        "rowheader":
+        {
+            "super": ["gridcell", "sectionhead"],
+            "props": ["aria-sort"]
+        },
+        "scrollbar":
+        {
+            "super": ["range"],
+            "props": ["aria-controls",
+                "aria-orientation",
+                "aria-valuemax",
+                "aria-valuemin",
+                "aria-valuenow"
+            ]
+        },
+        "search":
+        {
+            "super": ["landmark"],
+            "props": null
+        },
+        "searchbox":
+        {
+            "super": ["textbox"],
+            "props": null
+        },
+        "section":
+        {
+            "super": ["structure"],
+            "props": ["aria-expanded"]
+        },
+        "sectionhead":
+        {
+            "super": ["structure"],
+            "props": ["aria-expanded"]
+        },
+        "select":
+        {
+            "super": ["composite", "group"],
+            "props": ["aria-orientation"]
+        },
+        "separator":
+        {
+            "super": ["structure", "widget"],
+            "props": ["aria-valuemax",
+                "aria-valuemin",
+                "aria-valuenow",
+                "aria-orientation",
+                "aria-valuetext"
+            ]
+        },
+        "slider":
+        {
+            "super": ["input", "range"],
+            "props": ["aria-orientation", "aria-readonly"]
+        },
+        "spinbutton":
+        {
+            "super": ["composite", "input", "range"],
+            "props": ["aria-readonly", "aria-required"]
+        },
+        "status":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "structure":
+        {
+            "super": ["roletype"],
+            "props": null
+        },
+        "switch":
+        {
+            "super": ["checkbox"],
+            "props": null
+        },
+        "tab":
+        {
+            "super": ["sectionhead", "widget"],
+            "props": ["aria-posinset",
+                "aria-selected",
+                "aria-setsize"
+            ]
+        },
+        "table":
+        {
+            "super": ["section"],
+            "props": ["aria-colcount", "aria-rowcount"]
+        },
+        "tablist":
+        {
+            "super": ["composite"],
+            "props": ["aria-level",
+                "aria-multiselectable",
+                "aria-orientation"
+            ]
+        },
+        "tabpanel":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "term":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "textbox":
+        {
+            "super": ["input"],
+            "props": ["aria-activedescendant",
+                "aria-autocomplete",
+                "aria-multiline",
+                "aria-placeholder",
+                "aria-readonly",
+                "aria-required"
+            ]
+        },
+        "timer":
+        {
+            "super": ["status"],
+            "props": null
+        },
+        "toolbar":
+        {
+            "super": ["group"],
+            "props": ["aria-orientation"]
+        },
+        "toolip":
+        {
+            "super": ["section"],
+            "props": null
+        },
+        "tree":
+        {
+            "super": ["select"],
+            "props": [
+                "aria-multiselectable",
+                "aria-required"
+            ]
+        },
+        "treegrid":
+        {
+            "super": ["grid", "tree"],
+            "props": null
+        },
+        "treeitem":
+        {
+            "super": ["listitem", "option"],
+            "props": null
+        },
+        "widget":
+        {
+            "super": ["roletype"],
+            "props": null
+        },
+        "window":
+        {
+            "super": ["roletype"],
+            "props": ["aria-expanded", "aria-modal"]
+        }
+    },
+    "abstract": [
+        "command",
+        "composite",
+        "input",
+        "landmark",
+        "range",
+        "roletype",
+        "section",
+        "sectionhead",
+        "select",
+        "structure",
+        "widget",
+        "window"
+    ],
+    "widget": [
+        "button",
+        "checkbox",
+        "gridcell",
+        "link",
+        "menuitem",
+        "menuitemcheckbox",
+        "menuitemradio",
+        "option",
+        "progressbar",
+        "radio",
+        "scrollbar",
+        "searchbox",
+        "separator",
+        "slider",
+        "spinbutton",
+        "switch",
+        "tab",
+        "tabpanel",
+        "textbox",
+        "treeitem"
+    ],
+    "composite": [
+        "combobox",
+        "grid",
+        "listbox",
+        "menu",
+        "menubar",
+        "radiogroup",
+        "tablist",
+        "tree",
+        "treegrid"
+    ],
+    "documentStructure": [
+        "application",
+        "article",
+        "cell",
+        "columnheader",
+        "definition",
+        "directory",
+        "document",
+        "feed",
+        "figure",
+        "group",
+        "heading",
+        "img",
+        "list",
+        "listitem",
+        "math",
+        "none",
+        "note",
+        "presentation",
+        "row",
+        "rowgroup",
+        "rowheader",
+        "separator",
+        "table",
+        "term",
+        "toolbar",
+        "tooltip"
+    ],
+    "landmark": [
+        "banner",
+        "complementary",
+        "contentinfo",
+        "form",
+        "main",
+        "navigation",
+        "region",
+        "search"
+    ],
+    "liveRegion": [
+        "alert",
+        "log",
+        "marquee",
+        "status",
+        "timer"
+    ],
+    "window": [
+        "alertdialog",
+        "dialog"
+    ],
+    "categories": [
+    {
+        "name": "Widget roles",
+        "id": "widget"
+    },
+    {
+        "name": "Composite roles",
+        "id": "composite"
+    },
+    {
+        "name": "Document Structure roles",
+        "id": "documentStructure"
+    },
+    {
+        "name": "Landmark roles",
+        "id": "landmark"
+    },
+    {
+        "name": "Live region roles",
+        "id": "liveRegion"
+    },
+    {
+        "name": "Window region roles",
+        "id": "window"
+    }]
+}

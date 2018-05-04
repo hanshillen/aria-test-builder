@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;span&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;span&gt;</h1>
+    <p>Last updated: 04 May 2018 16:44:10</p>
+         <p>
+      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong><a href="https://w3c.github.io/html-aria/#dfn-any-role">any</a></strong>
+    </p>
+  
+     
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='button' class='role-test button-test span-test' id='span-button-0-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='checkbox' class='role-test checkbox-test span-test' id='span-checkbox-1-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='gridcell' class='role-test gridcell-test span-test' id='span-gridcell-2-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='link' class='role-test link-test span-test' id='span-link-3-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='menuitem' class='role-test menuitem-test span-test' id='span-menuitem-4-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='menuitemcheckbox' class='role-test menuitemcheckbox-test span-test' id='span-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='menuitemradio' class='role-test menuitemradio-test span-test' id='span-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='option' class='role-test option-test span-test' id='span-option-7-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='progressbar' class='role-test progressbar-test span-test' id='span-progressbar-8-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='radio' class='role-test radio-test span-test' id='span-radio-9-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='scrollbar' class='role-test scrollbar-test span-test' id='span-scrollbar-10-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='searchbox' class='role-test searchbox-test span-test' id='span-searchbox-11-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='separator' class='role-test separator-test span-test' id='span-separator-12-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='slider' class='role-test slider-test span-test' id='span-slider-13-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='spinbutton' class='role-test spinbutton-test span-test' id='span-spinbutton-14-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='switch' class='role-test switch-test span-test' id='span-switch-15-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='tab' class='role-test tab-test span-test' id='span-tab-16-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='tabpanel' class='role-test tabpanel-test span-test' id='span-tabpanel-17-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='textbox' class='role-test textbox-test span-test' id='span-textbox-18-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='treeitem' class='role-test treeitem-test span-test' id='span-treeitem-19-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='combobox' class='role-test combobox-test span-test' id='span-combobox-0-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='grid' class='role-test grid-test span-test' id='span-grid-1-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='listbox' class='role-test listbox-test span-test' id='span-listbox-2-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='menu' class='role-test menu-test span-test' id='span-menu-3-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='menubar' class='role-test menubar-test span-test' id='span-menubar-4-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='radiogroup' class='role-test radiogroup-test span-test' id='span-radiogroup-5-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='tablist' class='role-test tablist-test span-test' id='span-tablist-6-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='tree' class='role-test tree-test span-test' id='span-tree-7-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='treegrid' class='role-test treegrid-test span-test' id='span-treegrid-8-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='application' class='role-test application-test span-test' id='span-application-0-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='article' class='role-test article-test span-test' id='span-article-1-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='cell' class='role-test cell-test span-test' id='span-cell-2-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='columnheader' class='role-test columnheader-test span-test' id='span-columnheader-3-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='definition' class='role-test definition-test span-test' id='span-definition-4-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='directory' class='role-test directory-test span-test' id='span-directory-5-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='document' class='role-test document-test span-test' id='span-document-6-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='feed' class='role-test feed-test span-test' id='span-feed-7-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='figure' class='role-test figure-test span-test' id='span-figure-8-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='group' class='role-test group-test span-test' id='span-group-9-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='heading' class='role-test heading-test span-test' id='span-heading-10-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='img' class='role-test img-test span-test' id='span-img-11-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='list' class='role-test list-test span-test' id='span-list-12-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='listitem' class='role-test listitem-test span-test' id='span-listitem-13-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='math' class='role-test math-test span-test' id='span-math-14-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='none' class='role-test none-test span-test' id='span-none-15-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='note' class='role-test note-test span-test' id='span-note-16-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='presentation' class='role-test presentation-test span-test' id='span-presentation-17-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='row' class='role-test row-test span-test' id='span-row-18-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='rowgroup' class='role-test rowgroup-test span-test' id='span-rowgroup-19-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='rowheader' class='role-test rowheader-test span-test' id='span-rowheader-20-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='separator' class='role-test separator-test span-test' id='span-separator-21-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='table' class='role-test table-test span-test' id='span-table-22-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='term' class='role-test term-test span-test' id='span-term-23-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='toolbar' class='role-test toolbar-test span-test' id='span-toolbar-24-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='tooltip' class='role-test tooltip-test span-test' id='span-tooltip-25-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='banner' class='role-test banner-test span-test' id='span-banner-0-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='complementary' class='role-test complementary-test span-test' id='span-complementary-1-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='contentinfo' class='role-test contentinfo-test span-test' id='span-contentinfo-2-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='form' class='role-test form-test span-test' id='span-form-3-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='main' class='role-test main-test span-test' id='span-main-4-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='navigation' class='role-test navigation-test span-test' id='span-navigation-5-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='region' class='role-test region-test span-test' id='span-region-6-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='search' class='role-test search-test span-test' id='span-search-7-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='alert' class='role-test alert-test span-test' id='span-alert-0-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='log' class='role-test log-test span-test' id='span-log-1-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='marquee' class='role-test marquee-test span-test' id='span-marquee-2-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='status' class='role-test status-test span-test' id='span-status-3-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='timer' class='role-test timer-test span-test' id='span-timer-4-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='alertdialog' class='role-test alertdialog-test span-test' id='span-alertdialog-0-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <span role='dialog' class='role-test dialog-test span-test' id='span-dialog-1-test' aria-label='acc name' tabindex='0' ></span>
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>
