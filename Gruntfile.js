@@ -8,6 +8,7 @@ module.exports = function ( grunt ) {
     ariaJSON: grunt.file.readJSON( "src/roles-states.json" ),
     template: grunt.file.read( "src/templates/role-test.handlebars" ),
     compactTemplate: grunt.file.read( "src/templates/role-test-compact.handlebars" ),
+    megaTest: true,
     // tasks
     prompt: {
       init: {
@@ -18,16 +19,19 @@ module.exports = function ( grunt ) {
             message: "choose a task",
             default: "test",
             choices: [
-              { name: "Create Test Cases", value: "test" },
-              { name: "Validate Test Cases", value: "validate" },
-              { name: "Generate Mistakes Report", value: "report" },
-              { name: "All of the Above", value: "full" },
+              { name: "Create Individual Test Cases", value: "test" },
+              { name: "Validate Individual Test Cases", value: "validate" },
+              { name: "Generate Mistakes Report for Individual Test Cases", value: "report" },
+              { name: "All of the Above (Individual)", value: "full" },
               "---",
-              {name: "Create Mega Test", value: "mega"}
+              { name: "Create Mega Test Case", value: "test:mega" },
+              { name: "Validate Mega Test Case", value: "validate:mega" },
+              { name: "Generate Mistakes Report for Mega Test Case", value: "report:mega" },
+              { name: "All of the Above (Mega)", value: "full:mega" }
             ]
           } ],
-          then: function(results, done){
-            grunt.task.run(results.test);
+          then: function ( results, done ) {
+            grunt.task.run( results.test );
             done();
           }
         }
@@ -38,7 +42,7 @@ module.exports = function ( grunt ) {
       testcases: [ 'dist/testcases/' ],
       validation: [ 'dist/validation/' ],
       report: [ 'dist/validator-mistakes.html' ],
-      mega: ["dist/testcases/mega-test.min.html", "dist/testcases/mega-test.html"]
+      mega: [ "dist/testcases/mega-test.min.html", "dist/testcases/mega-test.html" ]
 
     },
     vnuserver: {},
@@ -69,7 +73,7 @@ module.exports = function ( grunt ) {
 
   // Main Grunt Tasks 
 
-  grunt.registerTask( "default", "Provide Options", [ 'prompt:init'] );
+  grunt.registerTask( "default", "Provide Options", [ 'prompt:init' ] );
   grunt.registerTask( "test", "Generate test files", [ 'clean:testcases', 'build-tests' ] );
   grunt.registerTask( "validate", "perform validation and store results", [ 'clean:validation', 'vnuserver', 'multi-validate' ] );
   grunt.registerTask( "report", "check validation resuls for mistake and create report", [ 'clean:report', 'create-report' ] );
@@ -80,7 +84,7 @@ module.exports = function ( grunt ) {
   grunt.registerTask( "build-test", "Create a single test case based on template", function ( elementId ) {
 
     grunt.config.requires( 'ariaJSON', 'elementsJSON' );
-    
+
     var elementsJSON = grunt.config( 'elementsJSON' );
     var ariaJSON = grunt.config( 'ariaJSON' );
     var megaTest = !elementId;
@@ -127,8 +131,33 @@ module.exports = function ( grunt ) {
 
   grunt.registerTask( "create-report", "check validation results for mistakes and create reports", function () {
     grunt.config.requires( 'elementsJSON', 'ariaJSON' );
-    var elementsJSON = grunt.config( 'elementsJSON' );
-    var ariaJSON = grunt.config( 'ariaJSON' );
+    try {
+      grunt.log.write( "Creating dist/validator-mistakes.html..." )
+      var reportTemplate = grunt.file.read( "templates/validator-mistakes.handlebars" );
+      var reportTemplateCompiled = Handlebars.compile( reportTemplate );
+      var elementsJSON = grunt.config( 'elementsJSON' );
+      var ariaJSON = grunt.config( 'ariaJSON' );
+      if ( grunt.config( 'megaTest' ) ) {
+        validatorMistakes = testMegaValidationResults(elementsJSON, ariaJSON);
+      } else {
+        validatorMistakes = testValidationResults(elementsJSON, ariaJSON);
+      }
+      var output = reportTemplateCompiled( { validatorMistakes: validatorMistakes } );
+      grunt.file.write( `dist/validator-mistakes.html`, output );
+      grunt.log.ok();
+    } catch ( err ) {
+      grunt.log.error( err );
+    }
+  } );
+
+  // Regular functions
+
+  function testMegaValidationResults() {
+
+  }
+
+  function testValidationResults( elementsJSON, ariaJSON ) {
+
     var validatorMistakes = {};
     var validationResult, allowedRoles;
     for ( let elementId in elementsJSON ) {
@@ -167,19 +196,8 @@ module.exports = function ( grunt ) {
       }
       grunt.log.ok();
     }
-    try {
-      grunt.log.write( "Creating dist/validator-mistakes.html..." )
-      var reportTemplate = grunt.file.read( "templates/validator-mistakes.handlebars" );
-      var reportTemplateCompiled = Handlebars.compile( reportTemplate );
-      var output = reportTemplateCompiled( { validatorMistakes: validatorMistakes } );
-      grunt.file.write( `dist/validator-mistakes.html`, output );
-      grunt.log.ok();
-    } catch ( err ) {
-      grunt.log.error( err );
-    }
-  } );
-
-  // Regular functions
+    return validatorMistakes;
+  }
 
   // Apply template for test case and store the result as a html file
   function compileTemplate( elementId, template, context ) {
@@ -187,7 +205,7 @@ module.exports = function ( grunt ) {
       elementId = "mega";
     }
     var compiled = Handlebars.compile( template );
-    
+
     var elementsJSON = grunt.config( 'elementsJSON' );
     var outputHTML = "";
 
@@ -236,7 +254,7 @@ module.exports = function ( grunt ) {
     return `${addZeroBefore(date.getDate())} ${month} ${date.getFullYear()} ${addZeroBefore(date.getHours())}:${addZeroBefore(date.getMinutes())}:${addZeroBefore(date.getSeconds())}`;
   } );
 
-  //List if of roles in a category
+  //List of roles in a category
   Handlebars.registerHelper( "testlist", function ( categoryId, ariaJSON, allowedRoles, elementId, options ) {
     var roleList = ariaJSON[ categoryId ];
     var out = ``;
