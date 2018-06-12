@@ -121,7 +121,7 @@
   {
     "nodeName": "caption",
     "name": "<caption>",
-    "markup": "<caption></caption>",
+    "markup": "<table><caption {attributeString}></caption><tr><td></td></tr></table>",
     "allowedRoles": []
   },
   "code":
