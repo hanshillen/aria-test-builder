@@ -140,18 +140,18 @@
     "allowedRoles": "all"
   },
 
-  "col-colgroup":
+  "col":
   {
     "nodeName": "col",
     "name": "<col>",
-    "markup": "<col></col>",
+    "markup": "<table><colgroup><col {attributeString}><col></colgroup><tr><td></td><td></td></tr></table>",
     "allowedRoles": []
   },
   "colgroup":
   {
     "nodeName": "colgroup",
     "name": "<colgroup>",
-    "markup": "<colgroup></colgroup>",
+    "markup": "<table><colgroup {attributeString}><col ><col></colgroup><tr><td></td><td></td></tr></table>",
     "allowedRoles": []
   },
   "datalist":
@@ -165,7 +165,7 @@
   {
     "nodeName": "dd",
     "name": "<dd>",
-    "markup": "<dd></dd>",
+    "markup": "<dl><dt></dt><dd {attributeString}></dd></dl><dl>",
     "allowedRoles": []
   },
   "del":
