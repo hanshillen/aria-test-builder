@@ -8,7 +8,7 @@ module.exports = function ( grunt ) {
     ariaJSON: grunt.file.readJSON( "src/roles-states.json" ),
     template: grunt.file.read( "src/templates/role-test.handlebars" ),
     compactTemplate: grunt.file.read( "src/templates/role-test-compact.handlebars" ),
-    megaTest: true,
+    //megaTest: true,
     // tasks
     prompt: {
       init: {
@@ -24,10 +24,10 @@ module.exports = function ( grunt ) {
               { name: "Generate Mistakes Report for Individual Test Cases", value: "report" },
               { name: "All of the Above (Individual)", value: "full" },
               "---",
-              { name: "Create Mega Test Case", value: "test:mega" },
+              { name: "Create Mega Test Case", value: "mega" },
               { name: "Validate Mega Test Case", value: "validate:mega" },
               { name: "Generate Mistakes Report for Mega Test Case", value: "report:mega" },
-              { name: "All of the Above (Mega)", value: "full:mega" }
+              { name: "All of the Above (Mega)", value: "fullmega" }
             ]
           } ],
           then: function ( results, done ) {
@@ -60,10 +60,10 @@ module.exports = function ( grunt ) {
     htmllint: {
       all: {
         options: {
-          errorevels: [ 'error' ],
+          errorevels: [ 'error', 'warning' ],
           reporter: "json",
           force: true,
-          ignore: /(.*is missing required attribute.*)|(.*must be contained in.*)|(.*is unnecessary for.*)|(.*is not (yet )?supported in all browsers.*)|(.*is missing one or more of the following attributes.*)|(.*not allowed as child of element.*)|(.*element being open.*)|(.*Stray (start|end) tag.*)|(.*empty.*)|(.*element must have a.*)|(.*must have attribute.*)|(.*is missing a required instance.*)|(.*does not need a.*)|(.*element is obsolete.*)|(.*consider.*)|(.*format.*)|(.*Duplicate ID.*)/i,
+          ignore: /(.*is missing required attribute.*)|(.*must be contained in.*)|(.*is not (yet )?supported in all browsers.*)|(.*is missing one or more of the following attributes.*)|(.*not allowed as child of element.*)|(.*element being open.*)|(.*Stray (start|end) tag.*)|(.*empty.*)|(.*element must have a.*)|(.*must have attribute.*)|(.*is missing a required instance.*)|(.*does not need a.*)|(.*element is obsolete.*)|(.*consider.*)|(.*format.*)|(.*Duplicate ID.*)/i,
           reporterOutput: "dist/validation/<%= grunt.task.current.args[0] %>.json"
         },
         src: `dist/testcases/<%= grunt.task.current.args[0] %>`
@@ -76,10 +76,11 @@ module.exports = function ( grunt ) {
   grunt.registerTask( "default", "Provide Options", [ 'prompt:init' ] );
   grunt.registerTask( "test", "Generate test files", [ 'clean:testcases', 'build-tests' ] );
   grunt.registerTask( "validate", "perform validation and store results", [ 'clean:validation', 'vnuserver', 'multi-validate' ] );
+  
   grunt.registerTask( "report", "check validation resuls for mistake and create report", [ 'clean:report', 'create-report' ] );
-  grunt.registerTask( "full", "Generate test files and validate them", [ 'test', 'validate', 'report' ] );
+  grunt.registerTask( "full", "Generate test files, validate them, create report", [ 'test', 'validate', 'report' ] );
   grunt.registerTask( "mega", "Generate one big test file", [ 'clean:mega', 'build-test', 'htmlmin:mega' ] );
-
+  grunt.registerTask( "full-mega", "Generate one big test file, validate it, create report", [ 'mega', 'validate', 'report:megaTest' ] );
 
   grunt.registerTask( "build-test", "Create a single test case based on template", function ( elementId ) {
 
@@ -153,7 +154,9 @@ module.exports = function ( grunt ) {
   // Regular functions
 
   function testMegaValidationResults() {
-
+    // TODO: there is no way to distinguish validator results 
+    // for mutliple test cases involving the same node name,
+    // if these results are in the same output doc
   }
 
   function testValidationResults( elementsJSON, ariaJSON ) {
