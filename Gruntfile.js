@@ -60,7 +60,7 @@ module.exports = function ( grunt ) {
     htmllint: {
       all: {
         options: {
-          errorevels: [ 'error', 'warning' ],
+          errorLevels: [ 'error', 'warning' ],
           reporter: "json",
           force: true,
           ignore: /(.*is missing required attribute.*)|(.*must be contained in.*)|(.*is not (yet )?supported in all browsers.*)|(.*is missing one or more of the following attributes.*)|(.*not allowed as child of element.*)|(.*element being open.*)|(.*Stray (start|end) tag.*)|(.*empty.*)|(.*element must have a.*)|(.*must have attribute.*)|(.*is missing a required instance.*)|(.*does not need a.*)|(.*element is obsolete.*)|(.*consider.*)|(.*format.*)|(.*Duplicate ID.*)/i,
@@ -76,7 +76,7 @@ module.exports = function ( grunt ) {
   grunt.registerTask( "default", "Provide Options", [ 'prompt:init' ] );
   grunt.registerTask( "test", "Generate test files", [ 'clean:testcases', 'build-tests' ] );
   grunt.registerTask( "validate", "perform validation and store results", [ 'clean:validation', 'vnuserver', 'multi-validate' ] );
-  
+
   grunt.registerTask( "report", "check validation resuls for mistake and create report", [ 'clean:report', 'create-report' ] );
   grunt.registerTask( "full", "Generate test files, validate them, create report", [ 'test', 'validate', 'report' ] );
   grunt.registerTask( "mega", "Generate one big test file", [ 'clean:mega', 'build-test', 'htmlmin:mega' ] );
@@ -134,14 +134,14 @@ module.exports = function ( grunt ) {
     grunt.config.requires( 'elementsJSON', 'ariaJSON' );
     try {
       grunt.log.write( "Creating dist/validator-mistakes.html..." )
-      var reportTemplate = grunt.file.read( "templates/validator-mistakes.handlebars" );
+      var reportTemplate = grunt.file.read( "src/templates/validator-mistakes.handlebars" );
       var reportTemplateCompiled = Handlebars.compile( reportTemplate );
       var elementsJSON = grunt.config( 'elementsJSON' );
       var ariaJSON = grunt.config( 'ariaJSON' );
       if ( grunt.config( 'megaTest' ) ) {
-        validatorMistakes = testMegaValidationResults(elementsJSON, ariaJSON);
+        validatorMistakes = testMegaValidationResults( elementsJSON, ariaJSON );
       } else {
-        validatorMistakes = testValidationResults(elementsJSON, ariaJSON);
+        validatorMistakes = testValidationResults( elementsJSON, ariaJSON );
       }
       var output = reportTemplateCompiled( { validatorMistakes: validatorMistakes } );
       grunt.file.write( `dist/validator-mistakes.html`, output );
@@ -163,7 +163,9 @@ module.exports = function ( grunt ) {
 
     var validatorMistakes = {};
     var validationResult, allowedRoles;
+    var RE1, RE2, nodeName, isAllowed, isAllowedByValidator, isNativeAllowedByValidator, isNativeRole, errorMsg, nativeRoleMistake, roleMistake;
     for ( let elementId in elementsJSON ) {
+      nodeName = elementsJSON[ elementId ].nodeName;
       grunt.log.write( `Checking ${elementId} results...` );
       try {
         validationResult = grunt.file.read( `dist/validation/${elementId}-test.html.json` );
@@ -172,27 +174,64 @@ module.exports = function ( grunt ) {
       }
 
       allowedRoles = elementsJSON[ elementId ].allowedRoles;
+      nativeRole = elementsJSON[ elementId ].nativeRole;
+
       for ( let role in ariaJSON.roles ) {
         if ( ariaJSON.abstract.includes( role ) ) {
           //No need to test abstract roles
           continue;
         }
-        let RE = RegExp( `(Bad value “${role}” for attribute “role” on element “${elementsJSON[elementId].nodeName}”.)|(Attribute “role” not allowed)` );
-        let isAllowed = allowedRoles == "all" || allowedRoles.includes( role );
-        // Check whether validator results matches expectation
-        let isAllowedByValidator = !RE.test( validationResult );
-        if ( isAllowed !== isAllowedByValidator ) {
-          //Create context for report template 
-          if ( !validatorMistakes[ elementId ] ) {
-            validatorMistakes[ elementId ] = {
-              name: elementsJSON[ elementId ].name,
-              mistakes: []
-            };
-          }
+        isNativeRole = role === nativeRole;
+        RE1 = RegExp( `(Bad value “${role}” for attribute “role” on element “${nodeName}”)|(Attribute “role” not allowed)` );
+        RE2 = RegExp( `The “${role}” role is unnecessary for element “${nodeName}”` );
+        isAllowed = allowedRoles == "all" || allowedRoles.includes( role ) || isNativeRole;
+        isAllowedByValidator = !RE1.test( validationResult );
+        isNativeAllowedByValidator = RE2.test( validationResult );
+        roleMistake = isAllowed !== isAllowedByValidator;
+        nativeRoleMistake = isNativeRole !== isNativeAllowedByValidator;
+        if (nativeRoleMistake)
+          grunt.log.ok( `Native mistake for ${role} role - isNativeRole: ${isNativeRole}, isNativeAllowedByValidator: ${isNativeAllowedByValidator}` );
+
+        if ( !nativeRoleMistake && !roleMistake ) {
+          continue;
+        }
+        // validator made a mistake
+
+        //Create context for report template 
+        if ( !validatorMistakes[ elementId ] ) {
+          validatorMistakes[ elementId ] = {
+            name: elementsJSON[ elementId ].name,
+            mistakes: []
+          };
+        }
+        if ( nativeRoleMistake ) {
+          errorMsg = `
+            <code>role='${role}'</code>
+            is 
+            <strong>incorrectly</strong>
+            ${isNativeAllowedByValidator ? '<strong class="valid">allowed as native role</strong>' : '<strong class="invalid">not indicated as native role</strong>'}
+            for 
+            <code>${nodeName}</code> element.`;
           let mistake = {
             role: role,
             nodeName: elementsJSON[ elementId ].nodeName,
-            falseNegative: isAllowed
+            falseNegative: isAllowed,
+            errorMsg
+          };
+          validatorMistakes[ elementId ].mistakes.push( mistake );
+        } else if (roleMistake){
+          errorMsg = `
+            <code>role='${role}'</code> 
+            <strong>incorrectly</strong>
+            flagged as
+            ${isAllowedByValidator ? '<strong class="valid">valid</strong>' : '<strong class="invalid">invalid</strong>'}
+            for 
+            <code>${nodeName}</code> element.`;
+          let mistake = {
+            role: role,
+            nodeName: elementsJSON[ elementId ].nodeName,
+            falseNegative: isAllowed,
+            errorMsg
           };
           validatorMistakes[ elementId ].mistakes.push( mistake );
         }

@@ -40,11 +40,7 @@
     <h3>Mistakes made by validator:</h3>
     <ol class="mistakes">
       {{#each element.mistakes as |mistake index|}}
-        {{#if mistake.falseNegative}}
-        <li><code>role='{{mistake.role}}'</code> <strong>incorrectly</strong> flagged as <strong class="invalid">invalid</strong> for <code>{{mistake.nodeName}}</code> element.</li>
-        {{else}}
-        <li><code>role='{{mistake.role}}'</code> <strong>incorrectly</strong> flagged as <strong class="valid">valid</strong> for <code>{{mistake.nodeName}}</code> element.</li>
-        {{/if}}
+        <li>{{{mistake.errorMsg}}}</li>
       {{/each}}
     </ol>
   {{/each}}

@@ -4,6 +4,7 @@
     "nodeName": "a",
     "name": "<a> with href",
     "markup": "<a href='#'></a>",
+    "nativeRole": "link",
     "allowedRoles": ["button", "checkbox", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab", "treeitem"]
   },
   "anohref":
@@ -11,6 +12,7 @@
     "nodeName": "a",
     "name": "<a> without href",
     "markup": "<a></a>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -19,6 +21,7 @@
     "nodeName": "abbr",
     "name": "<abbr>",
     "markup": "<abbr></abbr>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -27,13 +30,15 @@
     "nodeName": "address",
     "name": "<address>",
     "markup": "<address></address>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "area":
   {
     "nodeName": "area",
     "name": "<area>",
-    "markup": "<area></area>",
+    "markup": "<area href='#'></area>",
+    "nativeRole": "link",
     "allowedRoles": []
   },
   "article":
@@ -41,6 +46,7 @@
     "nodeName": "article",
     "name": "<article>",
     "markup": "<article></article>",
+    "nativeRole": "article",
     "allowedRoles": ["feed", "presentation", "none", "document", "application", "main", "region"]
   },
   "aside":
@@ -48,6 +54,7 @@
     "nodeName": "aside",
     "name": "<aside>",
     "markup": "<aside></aside>",
+    "nativeRole": "complementary",
     "allowedRoles": ["feed", "note", "presentation", "none", "region", "search"]
   },
   "audio":
@@ -55,6 +62,7 @@
     "nodeName": "audio",
     "name": "<audio>",
     "markup": "<audio></audio>",
+    "nativeRole": null,
     "allowedRoles": ["application"]
   },
 
@@ -63,6 +71,7 @@
     "nodeName": "b",
     "name": "<b>",
     "markup": "<b></b>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -71,6 +80,7 @@
     "nodeName": "base",
     "name": "<base>",
     "markup": "<base></base>",
+    "nativeRole": null,
     "allowedRoles": []
   },
 
@@ -79,6 +89,7 @@
     "nodeName": "bdi",
     "name": "<bdi>",
     "markup": "<bdi></bdi>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "bdo":
@@ -86,6 +97,7 @@
     "nodeName": "bdo",
     "name": "<bdo>",
     "markup": "<bdo></bdo>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -94,6 +106,7 @@
     "nodeName": "br",
     "name": "<br>",
     "markup": "<br></br>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "button":
@@ -101,6 +114,7 @@
     "nodeName": "button",
     "name": "<button>",
     "markup": "<button></button>",
+    "nativeRole": "button",
     "allowedRoles": ["checkbox", "link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab"]
   },
   "buttontypemenu":
@@ -108,6 +122,7 @@
     "nodeName": "button",
     "name": "<button type='menu'>",
     "markup": "<button type='menu'></button>",
+    "nativeRole": "button",
     "allowedRoles": ["menuitem"]
   },
   "canvas":
@@ -115,6 +130,7 @@
     "nodeName": "canvas",
     "name": "<canvas>",
     "markup": "<canvas></canvas>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "caption":
@@ -122,6 +138,7 @@
     "nodeName": "caption",
     "name": "<caption>",
     "markup": "<table><caption {attributeString}></caption><tr><td></td></tr></table>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "code":
@@ -129,6 +146,7 @@
     "nodeName": "code",
     "name": "<code>",
     "markup": "<code></code>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -137,6 +155,7 @@
     "nodeName": "cite",
     "name": "<cite>",
     "markup": "<cite></cite>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -145,6 +164,7 @@
     "nodeName": "col",
     "name": "<col>",
     "markup": "<table><colgroup><col {attributeString}><col></colgroup><tr><td></td><td></td></tr></table>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "colgroup":
@@ -152,6 +172,7 @@
     "nodeName": "colgroup",
     "name": "<colgroup>",
     "markup": "<table><colgroup {attributeString}><col ><col></colgroup><tr><td></td><td></td></tr></table>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "datalist":
@@ -159,6 +180,7 @@
     "nodeName": "datalist",
     "name": "<datalist>",
     "markup": "<datalist></datalist>",
+    "nativeRole": "listbox",
     "allowedRoles": []
   },
   "dd":
@@ -166,6 +188,7 @@
     "nodeName": "dd",
     "name": "<dd>",
     "markup": "<dl><dt></dt><dd {attributeString}></dd></dl><dl>",
+    "nativeRole": "definition",
     "allowedRoles": []
   },
   "del":
@@ -173,6 +196,7 @@
     "nodeName": "del",
     "name": "<del>",
     "markup": "<del></del>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -181,6 +205,7 @@
     "nodeName": "details",
     "name": "<details>",
     "markup": "<details></details>",
+    "nativeRole": "group",
     "allowedRoles": []
   },
 
@@ -189,6 +214,7 @@
     "nodeName": "dfn",
     "name": "<dfn>",
     "markup": "<dfn></dfn>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "dialog":
@@ -196,6 +222,7 @@
     "nodeName": "dialog",
     "name": "<dialog>",
     "markup": "<dialog></dialog>",
+    "nativeRole": "dialog",
     "allowedRoles": ["alertdialog"]
   },
   "div":
@@ -203,6 +230,7 @@
     "nodeName": "div",
     "name": "<div>",
     "markup": "<div></div>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "dl":
@@ -210,13 +238,15 @@
     "nodeName": "dl",
     "name": "<dl>",
     "markup": "<dl></dl>",
-    "allowedRoles": ["group", "presentation", "none"]
+    "nativeRole": null,
+    "allowedRoles": ["group", "list", "presentation", "none"]
   },
   "dt":
   {
     "nodeName": "dt",
     "name": "<dt>",
     "markup": "<dt></dt>",
+    "nativeRole": "term",
     "allowedRoles": []
   },
   "em":
@@ -224,6 +254,7 @@
     "nodeName": "em",
     "name": "<em>",
     "markup": "<em></em>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -232,6 +263,7 @@
     "nodeName": "embed",
     "name": "<embed>",
     "markup": "<embed></embed>",
+    "nativeRole": null,
     "allowedRoles": ["application", "document", "presentation", "none", "img"]
   },
   "figcaption":
@@ -239,6 +271,7 @@
     "nodeName": "figcaption",
     "name": "<figcaption>",
     "markup": "<figcaption></figcaption>",
+    "nativeRole": null,
     "allowedRoles": ["group", "presentation", "none"]
   },
   "fieldset":
@@ -246,6 +279,7 @@
     "nodeName": "fieldset",
     "name": "<fieldset>",
     "markup": "<fieldset></fieldset>",
+    "nativeRole": "group",
     "allowedRoles": ["group", "none", "presentation"]
   },
   "figure":
@@ -253,6 +287,7 @@
     "nodeName": "figure",
     "name": "<figure>",
     "markup": "<figure></figure>",
+    "nativeRole": "figure",
     "allowedRoles": ["group", "none", "presentation"]
   },
   "footer":
@@ -260,6 +295,7 @@
     "nodeName": "footer",
     "name": "<footer>",
     "markup": "<footer></footer>",
+    "nativeRole": "contentinfo",
     "allowedRoles": ["group", "none", "presentation"]
   },
   "form":
@@ -267,6 +303,7 @@
     "nodeName": "form",
     "name": "<form>",
     "markup": "<form></form>",
+    "nativeRole": "form",
     "allowedRoles": ["search", "none", "presentation"]
   },
   "h1":
@@ -274,6 +311,47 @@
     "nodeName": "h1",
     "name": "<h1>",
     "markup": "<h1></h1>",
+    "nativeRole": "heading",
+    "allowedRoles": ["tab", "none", "presentation"]
+  },
+  "h2":
+  {
+    "nodeName": "h2",
+    "name": "<h2>",
+    "markup": "<h2></h2>",
+    "nativeRole": "heading",
+    "allowedRoles": ["tab", "none", "presentation"]
+  },
+  "h3":
+  {
+    "nodeName": "h3",
+    "name": "<h3>",
+    "markup": "<h3></h3>",
+    "nativeRole": "heading",
+    "allowedRoles": ["tab", "none", "presentation"]
+  },
+  "h4":
+  {
+    "nodeName": "h4",
+    "name": "<h4>",
+    "markup": "<h4></h4>",
+    "nativeRole": "heading",
+    "allowedRoles": ["tab", "none", "presentation"]
+  },
+  "h5":
+  {
+    "nodeName": "h5",
+    "name": "<h5>",
+    "markup": "<h5></h5>",
+    "nativeRole": "heading",
+    "allowedRoles": ["tab", "none", "presentation"]
+  },
+  "h6":
+  {
+    "nodeName": "h6",
+    "name": "<h6>",
+    "markup": "<h6></h6>",
+    "nativeRole": "heading",
     "allowedRoles": ["tab", "none", "presentation"]
   },
   "header":
@@ -281,6 +359,7 @@
     "nodeName": "header",
     "name": "<header>",
     "markup": "<header></header>",
+    "nativeRole": "banner",
     "allowedRoles": ["group", "none", "presentation"]
   },
   "hr":
@@ -288,6 +367,7 @@
     "nodeName": "hr",
     "name": "<hr>",
     "markup": "<hr></hr>",
+    "nativeRole": "separator",
     "allowedRoles": ["none", "presentation"]
   },
   "i":
@@ -295,6 +375,7 @@
     "nodeName": "i",
     "name": "<i>",
     "markup": "<i></i>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "iframe":
@@ -302,13 +383,15 @@
     "nodeName": "iframe",
     "name": "<iframe>",
     "markup": "<iframe></iframe>",
+    "nativeRole": null,
     "allowedRoles": ["application", "document", "img"]
   },
-  "img-alt":
+  "img-noalt":
   {
     "nodeName": "imgEmptyAlt",
     "name": "<imgEmptyAlt>",
     "markup": "<img alt='' />",
+    "nativeRole": null,
     "allowedRoles": ["none", "presentation"]
   },
   "img":
@@ -317,6 +400,7 @@
     "name": "<imgWithAlt>",
     "markup": "<img alt='some text' />",
     "allowedRoles": "all",
+    "nativeRole": "img",
     "excludedRoles": ["presentation", "none"]
   },
   "input-button":
@@ -324,6 +408,7 @@
     "nodeName": "input",
     "name": "<input type='Button' />",
     "markup": "<input type='button'/>",
+    "nativeRole": "button",
     "allowedRoles": ["link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab"]
   },
   "input-checkbox":
@@ -331,6 +416,7 @@
     "nodeName": "input",
     "name": "<input type='Checkbox' />",
     "markup": "<input type='checkbox'/>",
+    "nativeRole": "checkbox",
     "allowedRoles": ["button", "menuitemcheckbox", "option", "switch"]
   },
   "input-color":
@@ -338,6 +424,7 @@
     "nodeName": "input",
     "name": "<input type='Color' />",
     "markup": "<input type='color'/>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "input-date":
@@ -345,6 +432,7 @@
     "nodeName": "input",
     "name": "<input type='Date' />",
     "markup": "<input type='date' />",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "input-datetime":
@@ -352,6 +440,7 @@
     "nodeName": "input",
     "name": "<input type='DateTime' />",
     "markup": "<input type='datetime'>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "input-Email":
@@ -359,6 +448,7 @@
     "nodeName": "input",
     "name": "<input type='Email' />",
     "markup": "<input type='email'/>",
+    "nativeRole": "textbox",
     "allowedRoles": []
   },
   "input-File":
@@ -366,6 +456,7 @@
     "nodeName": "input",
     "name": "<input type='File' />",
     "markup": "<input type='file'/>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "input-Hidden":
@@ -373,6 +464,7 @@
     "nodeName": "input",
     "name": "<input type='Hidden' />",
     "markup": "<input type=hidden />",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "input-Image":
@@ -380,6 +472,7 @@
     "nodeName": "input",
     "name": "<input type='Image' />",
     "markup": "<input type='image'/>",
+    "nativeRole": "button",
     "allowedRoles": ["link", "menuitem", "menuitemcheckbox", "menuitemradio", "radio", "switch"]
   },
   "input-Month":
@@ -387,6 +480,7 @@
     "nodeName": "input",
     "name": "<input type='Month' />",
     "markup": "<input type='month'/>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "input-Number":
@@ -394,6 +488,7 @@
     "nodeName": "input",
     "name": "<input type='Number' />",
     "markup": "<input type='number'/>",
+    "nativeRole": "spinbutton",
     "allowedRoles": []
   },
   "input-Password":
@@ -401,6 +496,7 @@
     "nodeName": "input",
     "name": "<input type='Password' />",
     "markup": "<input type='password'/>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "input-Radio":
@@ -408,6 +504,7 @@
     "nodeName": "input",
     "name": "<input type='Radio' />",
     "markup": "<input type='radio'/>",
+    "nativeRole": "radio",
     "allowedRoles": ["menuitemradio"]
   },
   "input-Range":
@@ -415,6 +512,7 @@
     "nodeName": "input",
     "name": "<input type='Range' />",
     "markup": "<input type='range'/>",
+    "nativeRole": "slider",
     "allowedRoles": []
   },
   "input-Reset":
@@ -422,6 +520,7 @@
     "nodeName": "input",
     "name": "<input type='Reset' />",
     "markup": "<input type='reset'/>",
+    "nativeRole": "button",
     "allowedRoles": []
   },
   "input-Search":
@@ -429,6 +528,7 @@
     "nodeName": "input",
     "name": "<input type='Search' />",
     "markup": "<input type='search'/>",
+    "nativeRole": "searchbox",
     "allowedRoles": []
   },
   "input-Submit":
@@ -436,6 +536,7 @@
     "nodeName": "input",
     "name": "<input type='Submit' />",
     "markup": "<input type='submit'/>",
+    "nativeRole": "button",
     "allowedRoles": []
   },
   "input-Tel":
@@ -443,6 +544,7 @@
     "nodeName": "input",
     "name": "<input type='Tel' />",
     "markup": "<input type='tel'/>",
+    "nativeRole": "textbox",
     "allowedRoles": []
   },
   "input-Text":
@@ -450,6 +552,7 @@
     "nodeName": "input",
     "name": "<input type='Text' />",
     "markup": "<input type='text'/>",
+    "nativeRole": "textbox",
     "allowedRoles": []
   },
   "input-Time":
@@ -457,6 +560,7 @@
     "nodeName": "input",
     "name": "<input type='Time' />",
     "markup": "<input type='time'/>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "input-Url":
@@ -464,6 +568,7 @@
     "nodeName": "input",
     "name": "<input type='Url' />",
     "markup": "<input type='url'/>",
+    "nativeRole": "textbox",
     "allowedRoles": []
   },
   "input-Week":
@@ -471,6 +576,7 @@
     "nodeName": "input",
     "name": "<input type='Week' />",
     "markup": "<input type='week'/>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "ins-del":
@@ -478,6 +584,7 @@
     "nodeName": "ins",
     "name": "<ins>",
     "markup": "<ins></ins>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "del":
@@ -485,6 +592,7 @@
     "nodeName": "del",
     "name": "<del>",
     "markup": "<del></del>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "kbd":
@@ -492,6 +600,7 @@
     "nodeName": "kbd",
     "name": "<kbd>",
     "markup": "<kbd></kbd>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -500,6 +609,7 @@
     "nodeName": "keygen",
     "name": "<keygen>",
     "markup": "<keygen></keygen>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "label":
@@ -507,6 +617,7 @@
     "nodeName": "label",
     "name": "<label>",
     "markup": "<label></label>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "legend":
@@ -521,6 +632,7 @@
     "nodeName": "li",
     "name": "<li>",
     "markup": "<li></li>",
+    "nativeRole": "listitem",
     "allowedRoles": ["menuitem", "menuitemcheckbox", "menuitemradio", "option", "none", "presentation", "radio", "separator", "tab", "treeitem"]
   },
   "link":
@@ -528,6 +640,7 @@
     "nodeName": "link",
     "name": "<link>",
     "markup": "<link></link>",
+    "nativeRole": "link",
     "allowedRoles": []
   },
   "main":
@@ -535,6 +648,7 @@
     "nodeName": "main",
     "name": "<main>",
     "markup": "<main></main>",
+    "nativeRole": "main",
     "allowedRoles": []
   },
   "map":
@@ -542,6 +656,7 @@
     "nodeName": "map",
     "name": "<map>",
     "markup": "<map></map>",
+    "nativeRole": null,
     "allowedRoles": []
   },
 
@@ -550,6 +665,7 @@
     "nodeName": "mark",
     "name": "<mark>",
     "markup": "<mark></mark>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "math":
@@ -557,6 +673,7 @@
     "nodeName": "math",
     "name": "<math>",
     "markup": "<math></math>",
+    "nativeRole": "math",
     "allowedRoles": []
   },
   "menu-context":
@@ -564,6 +681,7 @@
     "nodeName": "menu",
     "name": "<menu type='context'>",
     "markup": "<menu type='context'></menu>",
+    "nativeRole": "menu",
     "allowedRoles": []
   },
   "menuitem-command":
@@ -571,6 +689,7 @@
     "nodeName": "menuitem",
     "name": "<menuitem type='command'>",
     "markup": "<menuitem type='command'></menuitem>",
+    "nativeRole": "menuitem",
     "allowedRoles": []
   },
   "menuitem-checkbox":
@@ -578,6 +697,7 @@
     "nodeName": "menuitem",
     "name": "<menuitem type='checkbox'>",
     "markup": "<menuitem type='checkbox'></menuitem>",
+    "nativeRole": "menuitemcheckbox",
     "allowedRoles": []
   },
   "menuitem-radio":
@@ -585,6 +705,7 @@
     "nodeName": "menuitem",
     "name": "<menuitem type='radio'>",
     "markup": "<menuitem type='radio'></menuitem>",
+    "nativeRole": "menuitemradio",
     "allowedRoles": []
   },
   "meta":
@@ -592,6 +713,7 @@
     "nodeName": "meta",
     "name": "<meta>",
     "markup": "<meta></meta>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "meter":
@@ -599,6 +721,7 @@
     "nodeName": "meter",
     "name": "<meter>",
     "markup": "<meter></meter>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "nav":
@@ -606,6 +729,7 @@
     "nodeName": "nav",
     "name": "<nav>",
     "markup": "<nav></nav>",
+    "nativeRole": "navigation",
     "allowedRoles": []
   },
   "noscript":
@@ -613,6 +737,7 @@
     "nodeName": "noscript",
     "name": "<noscript>",
     "markup": "<noscript></noscript>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "object":
@@ -620,6 +745,7 @@
     "nodeName": "object",
     "name": "<object>",
     "markup": "<object></object>",
+    "nativeRole": null,
     "allowedRoles": ["application", "document", "img"]
   },
   "ol":
@@ -627,6 +753,7 @@
     "nodeName": "ol",
     "name": "<ol>",
     "markup": "<ol></ol>",
+    "nativeRole": "list",
     "allowedRoles": ["directory", "group", "listbox", "menu", "menubar", "none", "presentation", "radiogroup", "tablist", "toolbar", "tree"]
   },
   "optgroup":
@@ -634,6 +761,7 @@
     "nodeName": "optgroup",
     "name": "<optgroup>",
     "markup": "<optgroup></optgroup>",
+    "nativeRole": "group",
     "allowedRoles": []
   },
   "option":
@@ -641,6 +769,7 @@
     "nodeName": "option",
     "name": "<option>",
     "markup": "<option></option>",
+    "nativeRole": "option",
     "allowedRoles": []
   },
   "output":
@@ -648,6 +777,7 @@
     "nodeName": "output",
     "name": "<output>",
     "markup": "<output></output>",
+    "nativeRole": "status",
     "allowedRoles": "all"
   },
   "p":
@@ -662,6 +792,7 @@
     "nodeName": "param",
     "name": "<param>",
     "markup": "<param></param>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "picture":
@@ -669,6 +800,7 @@
     "nodeName": "picture",
     "name": "<picture>",
     "markup": "<picture></picture>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "progress":
@@ -676,6 +808,7 @@
     "nodeName": "progress",
     "name": "<progress>",
     "markup": "<progress></progress>",
+    "nativeRole": "progressbar",
     "allowedRoles": "all"
   },
   "q":
@@ -683,6 +816,7 @@
     "nodeName": "q",
     "name": "<q>",
     "markup": "<q></q>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "rp":
@@ -690,6 +824,7 @@
     "nodeName": "rp",
     "name": "<rp>",
     "markup": "<rp></rp>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "rt":
@@ -697,6 +832,7 @@
     "nodeName": "rt",
     "name": "<rt>",
     "markup": "<rt></rt>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "ruby":
@@ -704,6 +840,7 @@
     "nodeName": "ruby",
     "name": "<ruby>",
     "markup": "<ruby></ruby>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "s":
@@ -711,6 +848,7 @@
     "nodeName": "s",
     "name": "<s>",
     "markup": "<s></s>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "samp":
@@ -718,6 +856,7 @@
     "nodeName": "samp",
     "name": "<samp>",
     "markup": "<samp></samp>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "script":
@@ -725,6 +864,7 @@
     "nodeName": "script",
     "name": "<script>",
     "markup": "<script></script>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "section":
@@ -732,6 +872,7 @@
     "nodeName": "section",
     "name": "<section>",
     "markup": "<section></section>",
+    "nativeRole": "region",
     "allowedRoles": ["alert", "alertdialog", "application", "banner", "complementary", "contentinfo", "dialog", "document", "feed", "log", "main", "marquee", "navigation", "none", "presentation", "search", "status", "tabpanel"]
   },
   "select":
@@ -739,6 +880,7 @@
     "nodeName": "select",
     "name": "<select> without multiple",
     "markup": "<select></select>",
+    "nativeRole": "combobox",
     "allowedRoles": ["menu"]
   },
   "select-2":
@@ -746,6 +888,7 @@
     "nodeName": "select",
     "name": "<select> with multiple",
     "markup": "<select multiple></select>",
+    "nativeRole": "listbox",
     "allowedRoles": []
   },
   "small":
@@ -753,6 +896,7 @@
     "nodeName": "small",
     "name": "<small>",
     "markup": "<small></small>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "source":
@@ -760,6 +904,7 @@
     "nodeName": "source",
     "name": "<source>",
     "markup": "<source></source>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "span":
@@ -767,6 +912,7 @@
     "nodeName": "span",
     "name": "<span>",
     "markup": "<span></span>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -775,6 +921,7 @@
     "nodeName": "strong",
     "name": "<strong>",
     "markup": "<strong></strong>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -783,6 +930,7 @@
     "nodeName": "style",
     "name": "<style>",
     "markup": "<style></style>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "svg":
@@ -790,6 +938,7 @@
     "nodeName": "svg",
     "name": "<svg>",
     "markup": "<svg></svg>",
+    "nativeRole": null,
     "allowedRoles": ["application", "document", "img"]
   },
   "sub":
@@ -797,6 +946,7 @@
     "nodeName": "sub",
     "name": "<sub>",
     "markup": "<sub></sub>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "sup":
@@ -804,6 +954,7 @@
     "nodeName": "sup",
     "name": "<sup>",
     "markup": "<sup></sup>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -812,6 +963,7 @@
     "nodeName": "summary",
     "name": "<summary> with open parent",
     "markup": "<details open><summary aria-expanded='true' {attributeString}></summary></details>",
+    "nativeRole": "button",
     "allowedRoles": ["button"]
   },
   "summaryClosed":
@@ -819,6 +971,7 @@
     "nodeName": "summary",
     "name": "<summary> with closed parent",
     "markup": "<details><summary aria-expanded='false' {attributeString}></summary></details>",
+    "nativeRole": "button",
     "allowedRoles": ["button"]
   },
   "table":
@@ -826,6 +979,7 @@
     "nodeName": "table",
     "name": "<table>",
     "markup": "<table></table>",
+    "nativeRole": "table",
     "allowedRoles": "all"
   },
   "template":
@@ -833,6 +987,7 @@
     "nodeName": "template",
     "name": "<template>",
     "markup": "<template></template>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "textarea":
@@ -840,20 +995,31 @@
     "nodeName": "textarea",
     "name": "<textarea>",
     "markup": "<textarea></textarea>",
+    "nativeRole": "textbox",
     "allowedRoles": []
   },
   "tbody":
   {
     "nodeName": "tbody",
-    "name": "<tbody>",
+    "name": "<table><tbody {attributeString}></tbody></table>",
     "markup": "<tbody></tbody>",
+    "nativeRole": "rowgroup",
     "allowedRoles": "all"
   },
   "tfoot":
   {
     "nodeName": "tfoot",
     "name": "<tfoot>",
-    "markup": "<tfoot></tfoot>",
+    "markup": "<table><tfoot {attributeString}></tfoot></table>",
+    "nativeRole": "rowgroup",
+    "allowedRoles": "all"
+  },
+  "thead":
+  {
+    "nodeName": "thead",
+    "name": "<thead>",
+    "markup": "<table><thead {attributeString}></thead></table>",
+    "nativeRole": "rowgroup",
     "allowedRoles": "all"
   },
   "title":
@@ -861,6 +1027,7 @@
     "nodeName": "title",
     "name": "<title>",
     "markup": "<title></title>",
+    "nativeRole": null,
     "allowedRoles": []
   },
   "td":
@@ -868,6 +1035,7 @@
     "nodeName": "td",
     "name": "<td>",
     "markup": "<td></td>",
+    "nativeRole": "cell",
     "allowedRoles": "all"
   },
 
@@ -876,6 +1044,7 @@
     "nodeName": "th",
     "name": "<th>",
     "markup": "<th></th>",
+    "nativeRole": "columnheader",
     "allowedRoles": "all"
   },
   "time":
@@ -883,6 +1052,7 @@
     "nodeName": "time",
     "name": "<time>",
     "markup": "<time></time>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -891,6 +1061,7 @@
     "nodeName": "tr",
     "name": "<tr>",
     "markup": "<tr></tr>",
+    "nativeRole": "row",
     "allowedRoles": "all"
   },
   "track":
@@ -898,6 +1069,7 @@
     "nodeName": "track",
     "name": "<track>",
     "markup": "<track></track>",
+    "nativeRole": null,
     "allowedRoles": []
   },
 
@@ -906,6 +1078,7 @@
     "nodeName": "u",
     "name": "<u>",
     "markup": "<u></u>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "ul":
@@ -913,6 +1086,7 @@
     "nodeName": "ul",
     "name": "<ul>",
     "markup": "<ul></ul>",
+    "nativeRole": "list",
     "allowedRoles": ["directory", "group", "listbox", "menu", "menubar", "radiogroup", "tablist", "toolbar", "tree", "presentation"]
   },
   "var":
@@ -920,6 +1094,7 @@
     "nodeName": "var",
     "name": "<var>",
     "markup": "<var></var>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
 
@@ -928,6 +1103,7 @@
     "nodeName": "video",
     "name": "<video>",
     "markup": "<video></video>",
+    "nativeRole": null,
     "allowedRoles": ["application"]
   },
   "wbr":
@@ -935,7 +1111,7 @@
     "nodeName": "wbr",
     "name": "<wbr>",
     "markup": "<wbr></wbr>",
+    "nativeRole": null,
     "allowedRoles": "all"
   }
-
 }
