@@ -1,7 +1,7 @@
 {
   "name": "aria-test-builder",
   "version": "0.1.0",
-  "description": "Automates genartion of ARIA role tests",
+  "description": "Automates generation of ARIA role tests",
   "license": "MIT",
   "repository": "TBD",
   "devDependencies": {
@@ -15,6 +15,7 @@
     "load-grunt-tasks": "^3.5.2"
   },
   "dependencies": {
+    "grunt-cli": "^1.3.2",
     "vnu-jar": "^18.4.9"
   }
 }
