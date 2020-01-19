@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;input type&#x3D;&#x27;Email&#x27; /&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;input type&#x3D;&#x27;Email&#x27; /&gt;</h1>
+    <p>Last updated: 18 July 2019 01:53:57</p>
+         <p>
+      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong>none</strong>
+    </p>
+  
+     
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='button' class='role-test button-test input-Email-test' id='input-Email-button-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='checkbox' class='role-test checkbox-test input-Email-test' id='input-Email-checkbox-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='gridcell' class='role-test gridcell-test input-Email-test' id='input-Email-gridcell-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='link' class='role-test link-test input-Email-test' id='input-Email-link-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='menuitem' class='role-test menuitem-test input-Email-test' id='input-Email-menuitem-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='menuitemcheckbox' class='role-test menuitemcheckbox-test input-Email-test' id='input-Email-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='menuitemradio' class='role-test menuitemradio-test input-Email-test' id='input-Email-menuitemradio-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='option' class='role-test option-test input-Email-test' id='input-Email-option-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='progressbar' class='role-test progressbar-test input-Email-test' id='input-Email-progressbar-8-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='radio' class='role-test radio-test input-Email-test' id='input-Email-radio-9-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='scrollbar' class='role-test scrollbar-test input-Email-test' id='input-Email-scrollbar-10-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='searchbox' class='role-test searchbox-test input-Email-test' id='input-Email-searchbox-11-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='separator' class='role-test separator-test input-Email-test' id='input-Email-separator-12-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='slider' class='role-test slider-test input-Email-test' id='input-Email-slider-13-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='spinbutton' class='role-test spinbutton-test input-Email-test' id='input-Email-spinbutton-14-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='switch' class='role-test switch-test input-Email-test' id='input-Email-switch-15-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='tab' class='role-test tab-test input-Email-test' id='input-Email-tab-16-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='tabpanel' class='role-test tabpanel-test input-Email-test' id='input-Email-tabpanel-17-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='textbox' class='role-test textbox-test input-Email-test' id='input-Email-textbox-18-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='treeitem' class='role-test treeitem-test input-Email-test' id='input-Email-treeitem-19-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='combobox' class='role-test combobox-test input-Email-test' id='input-Email-combobox-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='grid' class='role-test grid-test input-Email-test' id='input-Email-grid-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='listbox' class='role-test listbox-test input-Email-test' id='input-Email-listbox-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='menu' class='role-test menu-test input-Email-test' id='input-Email-menu-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='menubar' class='role-test menubar-test input-Email-test' id='input-Email-menubar-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='radiogroup' class='role-test radiogroup-test input-Email-test' id='input-Email-radiogroup-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='tablist' class='role-test tablist-test input-Email-test' id='input-Email-tablist-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='tree' class='role-test tree-test input-Email-test' id='input-Email-tree-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='treegrid' class='role-test treegrid-test input-Email-test' id='input-Email-treegrid-8-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='application' class='role-test application-test input-Email-test' id='input-Email-application-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='article' class='role-test article-test input-Email-test' id='input-Email-article-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='cell' class='role-test cell-test input-Email-test' id='input-Email-cell-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='columnheader' class='role-test columnheader-test input-Email-test' id='input-Email-columnheader-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='definition' class='role-test definition-test input-Email-test' id='input-Email-definition-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='directory' class='role-test directory-test input-Email-test' id='input-Email-directory-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='document' class='role-test document-test input-Email-test' id='input-Email-document-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='feed' class='role-test feed-test input-Email-test' id='input-Email-feed-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='figure' class='role-test figure-test input-Email-test' id='input-Email-figure-8-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='group' class='role-test group-test input-Email-test' id='input-Email-group-9-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='heading' class='role-test heading-test input-Email-test' id='input-Email-heading-10-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='img' class='role-test img-test input-Email-test' id='input-Email-img-11-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='list' class='role-test list-test input-Email-test' id='input-Email-list-12-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='listitem' class='role-test listitem-test input-Email-test' id='input-Email-listitem-13-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='math' class='role-test math-test input-Email-test' id='input-Email-math-14-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='none' class='role-test none-test input-Email-test' id='input-Email-none-15-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='note' class='role-test note-test input-Email-test' id='input-Email-note-16-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='presentation' class='role-test presentation-test input-Email-test' id='input-Email-presentation-17-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='row' class='role-test row-test input-Email-test' id='input-Email-row-18-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='rowgroup' class='role-test rowgroup-test input-Email-test' id='input-Email-rowgroup-19-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='rowheader' class='role-test rowheader-test input-Email-test' id='input-Email-rowheader-20-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='separator' class='role-test separator-test input-Email-test' id='input-Email-separator-21-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='table' class='role-test table-test input-Email-test' id='input-Email-table-22-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='term' class='role-test term-test input-Email-test' id='input-Email-term-23-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='toolbar' class='role-test toolbar-test input-Email-test' id='input-Email-toolbar-24-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='tooltip' class='role-test tooltip-test input-Email-test' id='input-Email-tooltip-25-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='banner' class='role-test banner-test input-Email-test' id='input-Email-banner-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='complementary' class='role-test complementary-test input-Email-test' id='input-Email-complementary-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='contentinfo' class='role-test contentinfo-test input-Email-test' id='input-Email-contentinfo-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='form' class='role-test form-test input-Email-test' id='input-Email-form-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='main' class='role-test main-test input-Email-test' id='input-Email-main-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='navigation' class='role-test navigation-test input-Email-test' id='input-Email-navigation-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='region' class='role-test region-test input-Email-test' id='input-Email-region-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='search' class='role-test search-test input-Email-test' id='input-Email-search-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='alert' class='role-test alert-test input-Email-test' id='input-Email-alert-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='log' class='role-test log-test input-Email-test' id='input-Email-log-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='marquee' class='role-test marquee-test input-Email-test' id='input-Email-marquee-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='status' class='role-test status-test input-Email-test' id='input-Email-status-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='timer' class='role-test timer-test input-Email-test' id='input-Email-timer-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='alertdialog' class='role-test alertdialog-test input-Email-test' id='input-Email-alertdialog-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='email' role='dialog' class='role-test dialog-test input-Email-test' id='input-Email-dialog-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>

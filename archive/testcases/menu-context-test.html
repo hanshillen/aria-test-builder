@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;menu type&#x3D;&#x27;context&#x27;&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;menu type&#x3D;&#x27;context&#x27;&gt;</h1>
+    <p>Last updated: 18 July 2019 01:54:01</p>
+         <p>
+      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong>none</strong>
+    </p>
+  
+     
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='button' class='role-test button-test menu-context-test' id='menu-context-button-0-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='checkbox' class='role-test checkbox-test menu-context-test' id='menu-context-checkbox-1-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='gridcell' class='role-test gridcell-test menu-context-test' id='menu-context-gridcell-2-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='link' class='role-test link-test menu-context-test' id='menu-context-link-3-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='menuitem' class='role-test menuitem-test menu-context-test' id='menu-context-menuitem-4-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='menuitemcheckbox' class='role-test menuitemcheckbox-test menu-context-test' id='menu-context-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='menuitemradio' class='role-test menuitemradio-test menu-context-test' id='menu-context-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='option' class='role-test option-test menu-context-test' id='menu-context-option-7-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='progressbar' class='role-test progressbar-test menu-context-test' id='menu-context-progressbar-8-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='radio' class='role-test radio-test menu-context-test' id='menu-context-radio-9-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='scrollbar' class='role-test scrollbar-test menu-context-test' id='menu-context-scrollbar-10-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='searchbox' class='role-test searchbox-test menu-context-test' id='menu-context-searchbox-11-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='separator' class='role-test separator-test menu-context-test' id='menu-context-separator-12-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='slider' class='role-test slider-test menu-context-test' id='menu-context-slider-13-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='spinbutton' class='role-test spinbutton-test menu-context-test' id='menu-context-spinbutton-14-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='switch' class='role-test switch-test menu-context-test' id='menu-context-switch-15-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='tab' class='role-test tab-test menu-context-test' id='menu-context-tab-16-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='tabpanel' class='role-test tabpanel-test menu-context-test' id='menu-context-tabpanel-17-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='textbox' class='role-test textbox-test menu-context-test' id='menu-context-textbox-18-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='treeitem' class='role-test treeitem-test menu-context-test' id='menu-context-treeitem-19-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='combobox' class='role-test combobox-test menu-context-test' id='menu-context-combobox-0-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='grid' class='role-test grid-test menu-context-test' id='menu-context-grid-1-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='listbox' class='role-test listbox-test menu-context-test' id='menu-context-listbox-2-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='menu' class='role-test menu-test menu-context-test' id='menu-context-menu-3-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='menubar' class='role-test menubar-test menu-context-test' id='menu-context-menubar-4-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='radiogroup' class='role-test radiogroup-test menu-context-test' id='menu-context-radiogroup-5-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='tablist' class='role-test tablist-test menu-context-test' id='menu-context-tablist-6-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='tree' class='role-test tree-test menu-context-test' id='menu-context-tree-7-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='treegrid' class='role-test treegrid-test menu-context-test' id='menu-context-treegrid-8-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='application' class='role-test application-test menu-context-test' id='menu-context-application-0-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='article' class='role-test article-test menu-context-test' id='menu-context-article-1-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='cell' class='role-test cell-test menu-context-test' id='menu-context-cell-2-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='columnheader' class='role-test columnheader-test menu-context-test' id='menu-context-columnheader-3-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='definition' class='role-test definition-test menu-context-test' id='menu-context-definition-4-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='directory' class='role-test directory-test menu-context-test' id='menu-context-directory-5-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='document' class='role-test document-test menu-context-test' id='menu-context-document-6-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='feed' class='role-test feed-test menu-context-test' id='menu-context-feed-7-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='figure' class='role-test figure-test menu-context-test' id='menu-context-figure-8-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='group' class='role-test group-test menu-context-test' id='menu-context-group-9-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='heading' class='role-test heading-test menu-context-test' id='menu-context-heading-10-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='img' class='role-test img-test menu-context-test' id='menu-context-img-11-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='list' class='role-test list-test menu-context-test' id='menu-context-list-12-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='listitem' class='role-test listitem-test menu-context-test' id='menu-context-listitem-13-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='math' class='role-test math-test menu-context-test' id='menu-context-math-14-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='none' class='role-test none-test menu-context-test' id='menu-context-none-15-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='note' class='role-test note-test menu-context-test' id='menu-context-note-16-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='presentation' class='role-test presentation-test menu-context-test' id='menu-context-presentation-17-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='row' class='role-test row-test menu-context-test' id='menu-context-row-18-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='rowgroup' class='role-test rowgroup-test menu-context-test' id='menu-context-rowgroup-19-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='rowheader' class='role-test rowheader-test menu-context-test' id='menu-context-rowheader-20-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='separator' class='role-test separator-test menu-context-test' id='menu-context-separator-21-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='table' class='role-test table-test menu-context-test' id='menu-context-table-22-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='term' class='role-test term-test menu-context-test' id='menu-context-term-23-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='toolbar' class='role-test toolbar-test menu-context-test' id='menu-context-toolbar-24-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='tooltip' class='role-test tooltip-test menu-context-test' id='menu-context-tooltip-25-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='banner' class='role-test banner-test menu-context-test' id='menu-context-banner-0-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='complementary' class='role-test complementary-test menu-context-test' id='menu-context-complementary-1-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='contentinfo' class='role-test contentinfo-test menu-context-test' id='menu-context-contentinfo-2-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='form' class='role-test form-test menu-context-test' id='menu-context-form-3-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='main' class='role-test main-test menu-context-test' id='menu-context-main-4-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='navigation' class='role-test navigation-test menu-context-test' id='menu-context-navigation-5-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='region' class='role-test region-test menu-context-test' id='menu-context-region-6-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='search' class='role-test search-test menu-context-test' id='menu-context-search-7-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='alert' class='role-test alert-test menu-context-test' id='menu-context-alert-0-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='log' class='role-test log-test menu-context-test' id='menu-context-log-1-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='marquee' class='role-test marquee-test menu-context-test' id='menu-context-marquee-2-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='status' class='role-test status-test menu-context-test' id='menu-context-status-3-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='timer' class='role-test timer-test menu-context-test' id='menu-context-timer-4-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='alertdialog' class='role-test alertdialog-test menu-context-test' id='menu-context-alertdialog-0-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menu type='context' role='dialog' class='role-test dialog-test menu-context-test' id='menu-context-dialog-1-test' aria-label='acc name' tabindex='0' ></menu>
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>

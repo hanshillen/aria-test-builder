@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;video&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;video&gt;</h1>
+    <p>Last updated: 18 July 2019 01:54:08</p>
+     
+    <p>
+      <a href="https://w3c.github.io/html-aria/#video">Allowed Roles</a>:</p>
+    <ul class="roleSummaryList">
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-application">application</a>
+        
+      </li>
+    </ul>
+ 
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='button' class='role-test button-test video-test' id='video-button-0-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='checkbox' class='role-test checkbox-test video-test' id='video-checkbox-1-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='gridcell' class='role-test gridcell-test video-test' id='video-gridcell-2-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='link' class='role-test link-test video-test' id='video-link-3-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='menuitem' class='role-test menuitem-test video-test' id='video-menuitem-4-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='menuitemcheckbox' class='role-test menuitemcheckbox-test video-test' id='video-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='menuitemradio' class='role-test menuitemradio-test video-test' id='video-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='option' class='role-test option-test video-test' id='video-option-7-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='progressbar' class='role-test progressbar-test video-test' id='video-progressbar-8-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='radio' class='role-test radio-test video-test' id='video-radio-9-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='scrollbar' class='role-test scrollbar-test video-test' id='video-scrollbar-10-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='searchbox' class='role-test searchbox-test video-test' id='video-searchbox-11-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='separator' class='role-test separator-test video-test' id='video-separator-12-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='slider' class='role-test slider-test video-test' id='video-slider-13-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='spinbutton' class='role-test spinbutton-test video-test' id='video-spinbutton-14-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='switch' class='role-test switch-test video-test' id='video-switch-15-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='tab' class='role-test tab-test video-test' id='video-tab-16-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='tabpanel' class='role-test tabpanel-test video-test' id='video-tabpanel-17-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='textbox' class='role-test textbox-test video-test' id='video-textbox-18-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='treeitem' class='role-test treeitem-test video-test' id='video-treeitem-19-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='combobox' class='role-test combobox-test video-test' id='video-combobox-0-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='grid' class='role-test grid-test video-test' id='video-grid-1-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='listbox' class='role-test listbox-test video-test' id='video-listbox-2-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='menu' class='role-test menu-test video-test' id='video-menu-3-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='menubar' class='role-test menubar-test video-test' id='video-menubar-4-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='radiogroup' class='role-test radiogroup-test video-test' id='video-radiogroup-5-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='tablist' class='role-test tablist-test video-test' id='video-tablist-6-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='tree' class='role-test tree-test video-test' id='video-tree-7-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='treegrid' class='role-test treegrid-test video-test' id='video-treegrid-8-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <video role='application' class='role-test application-test video-test' id='video-application-0-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='article' class='role-test article-test video-test' id='video-article-1-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='cell' class='role-test cell-test video-test' id='video-cell-2-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='columnheader' class='role-test columnheader-test video-test' id='video-columnheader-3-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='definition' class='role-test definition-test video-test' id='video-definition-4-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='directory' class='role-test directory-test video-test' id='video-directory-5-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='document' class='role-test document-test video-test' id='video-document-6-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='feed' class='role-test feed-test video-test' id='video-feed-7-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='figure' class='role-test figure-test video-test' id='video-figure-8-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='group' class='role-test group-test video-test' id='video-group-9-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='heading' class='role-test heading-test video-test' id='video-heading-10-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='img' class='role-test img-test video-test' id='video-img-11-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='list' class='role-test list-test video-test' id='video-list-12-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='listitem' class='role-test listitem-test video-test' id='video-listitem-13-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='math' class='role-test math-test video-test' id='video-math-14-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='none' class='role-test none-test video-test' id='video-none-15-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='note' class='role-test note-test video-test' id='video-note-16-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='presentation' class='role-test presentation-test video-test' id='video-presentation-17-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='row' class='role-test row-test video-test' id='video-row-18-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='rowgroup' class='role-test rowgroup-test video-test' id='video-rowgroup-19-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='rowheader' class='role-test rowheader-test video-test' id='video-rowheader-20-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='separator' class='role-test separator-test video-test' id='video-separator-21-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='table' class='role-test table-test video-test' id='video-table-22-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='term' class='role-test term-test video-test' id='video-term-23-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='toolbar' class='role-test toolbar-test video-test' id='video-toolbar-24-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='tooltip' class='role-test tooltip-test video-test' id='video-tooltip-25-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='banner' class='role-test banner-test video-test' id='video-banner-0-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='complementary' class='role-test complementary-test video-test' id='video-complementary-1-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='contentinfo' class='role-test contentinfo-test video-test' id='video-contentinfo-2-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='form' class='role-test form-test video-test' id='video-form-3-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='main' class='role-test main-test video-test' id='video-main-4-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='navigation' class='role-test navigation-test video-test' id='video-navigation-5-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='region' class='role-test region-test video-test' id='video-region-6-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='search' class='role-test search-test video-test' id='video-search-7-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='alert' class='role-test alert-test video-test' id='video-alert-0-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='log' class='role-test log-test video-test' id='video-log-1-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='marquee' class='role-test marquee-test video-test' id='video-marquee-2-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='status' class='role-test status-test video-test' id='video-status-3-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='timer' class='role-test timer-test video-test' id='video-timer-4-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='alertdialog' class='role-test alertdialog-test video-test' id='video-alertdialog-0-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <video role='dialog' class='role-test dialog-test video-test' id='video-dialog-1-test' aria-label='acc name' tabindex='0' ></video>
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>

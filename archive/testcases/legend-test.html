@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;legend&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;legend&gt;</h1>
+    <p>Last updated: 18 July 2019 01:54:00</p>
+         <p>
+      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong>none</strong>
+    </p>
+  
+     
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='button' class='role-test button-test legend-test' id='legend-button-0-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='checkbox' class='role-test checkbox-test legend-test' id='legend-checkbox-1-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='gridcell' class='role-test gridcell-test legend-test' id='legend-gridcell-2-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='link' class='role-test link-test legend-test' id='legend-link-3-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='menuitem' class='role-test menuitem-test legend-test' id='legend-menuitem-4-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='menuitemcheckbox' class='role-test menuitemcheckbox-test legend-test' id='legend-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='menuitemradio' class='role-test menuitemradio-test legend-test' id='legend-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='option' class='role-test option-test legend-test' id='legend-option-7-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='progressbar' class='role-test progressbar-test legend-test' id='legend-progressbar-8-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='radio' class='role-test radio-test legend-test' id='legend-radio-9-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='scrollbar' class='role-test scrollbar-test legend-test' id='legend-scrollbar-10-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='searchbox' class='role-test searchbox-test legend-test' id='legend-searchbox-11-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='separator' class='role-test separator-test legend-test' id='legend-separator-12-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='slider' class='role-test slider-test legend-test' id='legend-slider-13-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='spinbutton' class='role-test spinbutton-test legend-test' id='legend-spinbutton-14-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='switch' class='role-test switch-test legend-test' id='legend-switch-15-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='tab' class='role-test tab-test legend-test' id='legend-tab-16-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='tabpanel' class='role-test tabpanel-test legend-test' id='legend-tabpanel-17-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='textbox' class='role-test textbox-test legend-test' id='legend-textbox-18-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='treeitem' class='role-test treeitem-test legend-test' id='legend-treeitem-19-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='combobox' class='role-test combobox-test legend-test' id='legend-combobox-0-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='grid' class='role-test grid-test legend-test' id='legend-grid-1-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='listbox' class='role-test listbox-test legend-test' id='legend-listbox-2-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='menu' class='role-test menu-test legend-test' id='legend-menu-3-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='menubar' class='role-test menubar-test legend-test' id='legend-menubar-4-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='radiogroup' class='role-test radiogroup-test legend-test' id='legend-radiogroup-5-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='tablist' class='role-test tablist-test legend-test' id='legend-tablist-6-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='tree' class='role-test tree-test legend-test' id='legend-tree-7-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='treegrid' class='role-test treegrid-test legend-test' id='legend-treegrid-8-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='application' class='role-test application-test legend-test' id='legend-application-0-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='article' class='role-test article-test legend-test' id='legend-article-1-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='cell' class='role-test cell-test legend-test' id='legend-cell-2-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='columnheader' class='role-test columnheader-test legend-test' id='legend-columnheader-3-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='definition' class='role-test definition-test legend-test' id='legend-definition-4-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='directory' class='role-test directory-test legend-test' id='legend-directory-5-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='document' class='role-test document-test legend-test' id='legend-document-6-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='feed' class='role-test feed-test legend-test' id='legend-feed-7-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='figure' class='role-test figure-test legend-test' id='legend-figure-8-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='group' class='role-test group-test legend-test' id='legend-group-9-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='heading' class='role-test heading-test legend-test' id='legend-heading-10-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='img' class='role-test img-test legend-test' id='legend-img-11-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='list' class='role-test list-test legend-test' id='legend-list-12-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='listitem' class='role-test listitem-test legend-test' id='legend-listitem-13-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='math' class='role-test math-test legend-test' id='legend-math-14-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='none' class='role-test none-test legend-test' id='legend-none-15-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='note' class='role-test note-test legend-test' id='legend-note-16-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='presentation' class='role-test presentation-test legend-test' id='legend-presentation-17-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='row' class='role-test row-test legend-test' id='legend-row-18-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='rowgroup' class='role-test rowgroup-test legend-test' id='legend-rowgroup-19-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='rowheader' class='role-test rowheader-test legend-test' id='legend-rowheader-20-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='separator' class='role-test separator-test legend-test' id='legend-separator-21-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='table' class='role-test table-test legend-test' id='legend-table-22-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='term' class='role-test term-test legend-test' id='legend-term-23-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='toolbar' class='role-test toolbar-test legend-test' id='legend-toolbar-24-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='tooltip' class='role-test tooltip-test legend-test' id='legend-tooltip-25-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='banner' class='role-test banner-test legend-test' id='legend-banner-0-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='complementary' class='role-test complementary-test legend-test' id='legend-complementary-1-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='contentinfo' class='role-test contentinfo-test legend-test' id='legend-contentinfo-2-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='form' class='role-test form-test legend-test' id='legend-form-3-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='main' class='role-test main-test legend-test' id='legend-main-4-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='navigation' class='role-test navigation-test legend-test' id='legend-navigation-5-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='region' class='role-test region-test legend-test' id='legend-region-6-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='search' class='role-test search-test legend-test' id='legend-search-7-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='alert' class='role-test alert-test legend-test' id='legend-alert-0-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='log' class='role-test log-test legend-test' id='legend-log-1-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='marquee' class='role-test marquee-test legend-test' id='legend-marquee-2-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='status' class='role-test status-test legend-test' id='legend-status-3-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='timer' class='role-test timer-test legend-test' id='legend-timer-4-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='alertdialog' class='role-test alertdialog-test legend-test' id='legend-alertdialog-0-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <legend role='dialog' class='role-test dialog-test legend-test' id='legend-dialog-1-test' aria-label='acc name' tabindex='0' ></legend>
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>

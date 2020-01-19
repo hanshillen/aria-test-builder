@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;del&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;del&gt;</h1>
+    <p>Last updated: 18 July 2019 01:53:53</p>
+         <p>
+      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong><a href="https://w3c.github.io/html-aria/#dfn-any-role">any</a></strong>
+    </p>
+  
+     
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='button' class='role-test button-test del-test' id='del-button-0-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='checkbox' class='role-test checkbox-test del-test' id='del-checkbox-1-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='gridcell' class='role-test gridcell-test del-test' id='del-gridcell-2-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='link' class='role-test link-test del-test' id='del-link-3-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='menuitem' class='role-test menuitem-test del-test' id='del-menuitem-4-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='menuitemcheckbox' class='role-test menuitemcheckbox-test del-test' id='del-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='menuitemradio' class='role-test menuitemradio-test del-test' id='del-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='option' class='role-test option-test del-test' id='del-option-7-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='progressbar' class='role-test progressbar-test del-test' id='del-progressbar-8-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='radio' class='role-test radio-test del-test' id='del-radio-9-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='scrollbar' class='role-test scrollbar-test del-test' id='del-scrollbar-10-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='searchbox' class='role-test searchbox-test del-test' id='del-searchbox-11-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='separator' class='role-test separator-test del-test' id='del-separator-12-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='slider' class='role-test slider-test del-test' id='del-slider-13-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='spinbutton' class='role-test spinbutton-test del-test' id='del-spinbutton-14-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='switch' class='role-test switch-test del-test' id='del-switch-15-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='tab' class='role-test tab-test del-test' id='del-tab-16-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='tabpanel' class='role-test tabpanel-test del-test' id='del-tabpanel-17-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='textbox' class='role-test textbox-test del-test' id='del-textbox-18-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='treeitem' class='role-test treeitem-test del-test' id='del-treeitem-19-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='combobox' class='role-test combobox-test del-test' id='del-combobox-0-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='grid' class='role-test grid-test del-test' id='del-grid-1-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='listbox' class='role-test listbox-test del-test' id='del-listbox-2-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='menu' class='role-test menu-test del-test' id='del-menu-3-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='menubar' class='role-test menubar-test del-test' id='del-menubar-4-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='radiogroup' class='role-test radiogroup-test del-test' id='del-radiogroup-5-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='tablist' class='role-test tablist-test del-test' id='del-tablist-6-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='tree' class='role-test tree-test del-test' id='del-tree-7-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='treegrid' class='role-test treegrid-test del-test' id='del-treegrid-8-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='application' class='role-test application-test del-test' id='del-application-0-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='article' class='role-test article-test del-test' id='del-article-1-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='cell' class='role-test cell-test del-test' id='del-cell-2-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='columnheader' class='role-test columnheader-test del-test' id='del-columnheader-3-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='definition' class='role-test definition-test del-test' id='del-definition-4-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='directory' class='role-test directory-test del-test' id='del-directory-5-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='document' class='role-test document-test del-test' id='del-document-6-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='feed' class='role-test feed-test del-test' id='del-feed-7-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='figure' class='role-test figure-test del-test' id='del-figure-8-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='group' class='role-test group-test del-test' id='del-group-9-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='heading' class='role-test heading-test del-test' id='del-heading-10-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='img' class='role-test img-test del-test' id='del-img-11-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='list' class='role-test list-test del-test' id='del-list-12-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='listitem' class='role-test listitem-test del-test' id='del-listitem-13-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='math' class='role-test math-test del-test' id='del-math-14-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='none' class='role-test none-test del-test' id='del-none-15-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='note' class='role-test note-test del-test' id='del-note-16-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='presentation' class='role-test presentation-test del-test' id='del-presentation-17-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='row' class='role-test row-test del-test' id='del-row-18-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='rowgroup' class='role-test rowgroup-test del-test' id='del-rowgroup-19-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='rowheader' class='role-test rowheader-test del-test' id='del-rowheader-20-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='separator' class='role-test separator-test del-test' id='del-separator-21-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='table' class='role-test table-test del-test' id='del-table-22-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='term' class='role-test term-test del-test' id='del-term-23-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='toolbar' class='role-test toolbar-test del-test' id='del-toolbar-24-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='tooltip' class='role-test tooltip-test del-test' id='del-tooltip-25-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='banner' class='role-test banner-test del-test' id='del-banner-0-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='complementary' class='role-test complementary-test del-test' id='del-complementary-1-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='contentinfo' class='role-test contentinfo-test del-test' id='del-contentinfo-2-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='form' class='role-test form-test del-test' id='del-form-3-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='main' class='role-test main-test del-test' id='del-main-4-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='navigation' class='role-test navigation-test del-test' id='del-navigation-5-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='region' class='role-test region-test del-test' id='del-region-6-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='search' class='role-test search-test del-test' id='del-search-7-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='alert' class='role-test alert-test del-test' id='del-alert-0-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='log' class='role-test log-test del-test' id='del-log-1-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='marquee' class='role-test marquee-test del-test' id='del-marquee-2-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='status' class='role-test status-test del-test' id='del-status-3-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='timer' class='role-test timer-test del-test' id='del-timer-4-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='alertdialog' class='role-test alertdialog-test del-test' id='del-alertdialog-0-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <del role='dialog' class='role-test dialog-test del-test' id='del-dialog-1-test' aria-label='acc name' tabindex='0' ></del>
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>

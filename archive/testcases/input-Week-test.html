@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;input type&#x3D;&#x27;Week&#x27; /&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;input type&#x3D;&#x27;Week&#x27; /&gt;</h1>
+    <p>Last updated: 18 July 2019 01:53:59</p>
+         <p>
+      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong>none</strong>
+    </p>
+  
+     
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='button' class='role-test button-test input-Week-test' id='input-Week-button-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='checkbox' class='role-test checkbox-test input-Week-test' id='input-Week-checkbox-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='gridcell' class='role-test gridcell-test input-Week-test' id='input-Week-gridcell-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='link' class='role-test link-test input-Week-test' id='input-Week-link-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='menuitem' class='role-test menuitem-test input-Week-test' id='input-Week-menuitem-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='menuitemcheckbox' class='role-test menuitemcheckbox-test input-Week-test' id='input-Week-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='menuitemradio' class='role-test menuitemradio-test input-Week-test' id='input-Week-menuitemradio-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='option' class='role-test option-test input-Week-test' id='input-Week-option-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='progressbar' class='role-test progressbar-test input-Week-test' id='input-Week-progressbar-8-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='radio' class='role-test radio-test input-Week-test' id='input-Week-radio-9-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='scrollbar' class='role-test scrollbar-test input-Week-test' id='input-Week-scrollbar-10-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='searchbox' class='role-test searchbox-test input-Week-test' id='input-Week-searchbox-11-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='separator' class='role-test separator-test input-Week-test' id='input-Week-separator-12-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='slider' class='role-test slider-test input-Week-test' id='input-Week-slider-13-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='spinbutton' class='role-test spinbutton-test input-Week-test' id='input-Week-spinbutton-14-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='switch' class='role-test switch-test input-Week-test' id='input-Week-switch-15-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='tab' class='role-test tab-test input-Week-test' id='input-Week-tab-16-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='tabpanel' class='role-test tabpanel-test input-Week-test' id='input-Week-tabpanel-17-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='textbox' class='role-test textbox-test input-Week-test' id='input-Week-textbox-18-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='treeitem' class='role-test treeitem-test input-Week-test' id='input-Week-treeitem-19-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='combobox' class='role-test combobox-test input-Week-test' id='input-Week-combobox-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='grid' class='role-test grid-test input-Week-test' id='input-Week-grid-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='listbox' class='role-test listbox-test input-Week-test' id='input-Week-listbox-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='menu' class='role-test menu-test input-Week-test' id='input-Week-menu-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='menubar' class='role-test menubar-test input-Week-test' id='input-Week-menubar-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='radiogroup' class='role-test radiogroup-test input-Week-test' id='input-Week-radiogroup-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='tablist' class='role-test tablist-test input-Week-test' id='input-Week-tablist-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='tree' class='role-test tree-test input-Week-test' id='input-Week-tree-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='treegrid' class='role-test treegrid-test input-Week-test' id='input-Week-treegrid-8-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='application' class='role-test application-test input-Week-test' id='input-Week-application-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='article' class='role-test article-test input-Week-test' id='input-Week-article-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='cell' class='role-test cell-test input-Week-test' id='input-Week-cell-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='columnheader' class='role-test columnheader-test input-Week-test' id='input-Week-columnheader-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='definition' class='role-test definition-test input-Week-test' id='input-Week-definition-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='directory' class='role-test directory-test input-Week-test' id='input-Week-directory-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='document' class='role-test document-test input-Week-test' id='input-Week-document-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='feed' class='role-test feed-test input-Week-test' id='input-Week-feed-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='figure' class='role-test figure-test input-Week-test' id='input-Week-figure-8-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='group' class='role-test group-test input-Week-test' id='input-Week-group-9-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='heading' class='role-test heading-test input-Week-test' id='input-Week-heading-10-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='img' class='role-test img-test input-Week-test' id='input-Week-img-11-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='list' class='role-test list-test input-Week-test' id='input-Week-list-12-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='listitem' class='role-test listitem-test input-Week-test' id='input-Week-listitem-13-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='math' class='role-test math-test input-Week-test' id='input-Week-math-14-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='none' class='role-test none-test input-Week-test' id='input-Week-none-15-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='note' class='role-test note-test input-Week-test' id='input-Week-note-16-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='presentation' class='role-test presentation-test input-Week-test' id='input-Week-presentation-17-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='row' class='role-test row-test input-Week-test' id='input-Week-row-18-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='rowgroup' class='role-test rowgroup-test input-Week-test' id='input-Week-rowgroup-19-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='rowheader' class='role-test rowheader-test input-Week-test' id='input-Week-rowheader-20-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='separator' class='role-test separator-test input-Week-test' id='input-Week-separator-21-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='table' class='role-test table-test input-Week-test' id='input-Week-table-22-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='term' class='role-test term-test input-Week-test' id='input-Week-term-23-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='toolbar' class='role-test toolbar-test input-Week-test' id='input-Week-toolbar-24-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='tooltip' class='role-test tooltip-test input-Week-test' id='input-Week-tooltip-25-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='banner' class='role-test banner-test input-Week-test' id='input-Week-banner-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='complementary' class='role-test complementary-test input-Week-test' id='input-Week-complementary-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='contentinfo' class='role-test contentinfo-test input-Week-test' id='input-Week-contentinfo-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='form' class='role-test form-test input-Week-test' id='input-Week-form-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='main' class='role-test main-test input-Week-test' id='input-Week-main-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='navigation' class='role-test navigation-test input-Week-test' id='input-Week-navigation-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='region' class='role-test region-test input-Week-test' id='input-Week-region-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='search' class='role-test search-test input-Week-test' id='input-Week-search-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='alert' class='role-test alert-test input-Week-test' id='input-Week-alert-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='log' class='role-test log-test input-Week-test' id='input-Week-log-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='marquee' class='role-test marquee-test input-Week-test' id='input-Week-marquee-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='status' class='role-test status-test input-Week-test' id='input-Week-status-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='timer' class='role-test timer-test input-Week-test' id='input-Week-timer-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='alertdialog' class='role-test alertdialog-test input-Week-test' id='input-Week-alertdialog-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='week' role='dialog' class='role-test dialog-test input-Week-test' id='input-Week-dialog-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>
