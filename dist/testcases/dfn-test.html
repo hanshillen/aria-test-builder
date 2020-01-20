@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;dfn&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;dfn&gt;</h1>
+    <p>Last updated: 20 January 2020 17:08:03</p>
+         <p>
+      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong><a href="https://w3c.github.io/html-aria/#dfn-any-role">any</a></strong>
+    </p>
+  
+     
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='button' class='role-test button-test dfn-test' id='dfn-button-0-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='checkbox' class='role-test checkbox-test dfn-test' id='dfn-checkbox-1-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='gridcell' class='role-test gridcell-test dfn-test' id='dfn-gridcell-2-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='link' class='role-test link-test dfn-test' id='dfn-link-3-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='menuitem' class='role-test menuitem-test dfn-test' id='dfn-menuitem-4-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='menuitemcheckbox' class='role-test menuitemcheckbox-test dfn-test' id='dfn-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='menuitemradio' class='role-test menuitemradio-test dfn-test' id='dfn-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='option' class='role-test option-test dfn-test' id='dfn-option-7-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='progressbar' class='role-test progressbar-test dfn-test' id='dfn-progressbar-8-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='radio' class='role-test radio-test dfn-test' id='dfn-radio-9-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='scrollbar' class='role-test scrollbar-test dfn-test' id='dfn-scrollbar-10-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='searchbox' class='role-test searchbox-test dfn-test' id='dfn-searchbox-11-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='separator' class='role-test separator-test dfn-test' id='dfn-separator-12-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='slider' class='role-test slider-test dfn-test' id='dfn-slider-13-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='spinbutton' class='role-test spinbutton-test dfn-test' id='dfn-spinbutton-14-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='switch' class='role-test switch-test dfn-test' id='dfn-switch-15-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='tab' class='role-test tab-test dfn-test' id='dfn-tab-16-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='tabpanel' class='role-test tabpanel-test dfn-test' id='dfn-tabpanel-17-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='textbox' class='role-test textbox-test dfn-test' id='dfn-textbox-18-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='treeitem' class='role-test treeitem-test dfn-test' id='dfn-treeitem-19-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='combobox' class='role-test combobox-test dfn-test' id='dfn-combobox-0-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='grid' class='role-test grid-test dfn-test' id='dfn-grid-1-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='listbox' class='role-test listbox-test dfn-test' id='dfn-listbox-2-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='menu' class='role-test menu-test dfn-test' id='dfn-menu-3-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='menubar' class='role-test menubar-test dfn-test' id='dfn-menubar-4-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='radiogroup' class='role-test radiogroup-test dfn-test' id='dfn-radiogroup-5-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='tablist' class='role-test tablist-test dfn-test' id='dfn-tablist-6-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='tree' class='role-test tree-test dfn-test' id='dfn-tree-7-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='treegrid' class='role-test treegrid-test dfn-test' id='dfn-treegrid-8-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='application' class='role-test application-test dfn-test' id='dfn-application-0-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='article' class='role-test article-test dfn-test' id='dfn-article-1-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='cell' class='role-test cell-test dfn-test' id='dfn-cell-2-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='columnheader' class='role-test columnheader-test dfn-test' id='dfn-columnheader-3-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='definition' class='role-test definition-test dfn-test' id='dfn-definition-4-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='directory' class='role-test directory-test dfn-test' id='dfn-directory-5-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='document' class='role-test document-test dfn-test' id='dfn-document-6-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='feed' class='role-test feed-test dfn-test' id='dfn-feed-7-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='figure' class='role-test figure-test dfn-test' id='dfn-figure-8-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='group' class='role-test group-test dfn-test' id='dfn-group-9-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='heading' class='role-test heading-test dfn-test' id='dfn-heading-10-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='img' class='role-test img-test dfn-test' id='dfn-img-11-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='list' class='role-test list-test dfn-test' id='dfn-list-12-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='listitem' class='role-test listitem-test dfn-test' id='dfn-listitem-13-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='math' class='role-test math-test dfn-test' id='dfn-math-14-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='none' class='role-test none-test dfn-test' id='dfn-none-15-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='note' class='role-test note-test dfn-test' id='dfn-note-16-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='presentation' class='role-test presentation-test dfn-test' id='dfn-presentation-17-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='row' class='role-test row-test dfn-test' id='dfn-row-18-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='rowgroup' class='role-test rowgroup-test dfn-test' id='dfn-rowgroup-19-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='rowheader' class='role-test rowheader-test dfn-test' id='dfn-rowheader-20-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='separator' class='role-test separator-test dfn-test' id='dfn-separator-21-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='table' class='role-test table-test dfn-test' id='dfn-table-22-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='term' class='role-test term-test dfn-test' id='dfn-term-23-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='toolbar' class='role-test toolbar-test dfn-test' id='dfn-toolbar-24-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='tooltip' class='role-test tooltip-test dfn-test' id='dfn-tooltip-25-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='banner' class='role-test banner-test dfn-test' id='dfn-banner-0-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='complementary' class='role-test complementary-test dfn-test' id='dfn-complementary-1-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='contentinfo' class='role-test contentinfo-test dfn-test' id='dfn-contentinfo-2-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='form' class='role-test form-test dfn-test' id='dfn-form-3-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='main' class='role-test main-test dfn-test' id='dfn-main-4-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='navigation' class='role-test navigation-test dfn-test' id='dfn-navigation-5-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='region' class='role-test region-test dfn-test' id='dfn-region-6-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='search' class='role-test search-test dfn-test' id='dfn-search-7-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='alert' class='role-test alert-test dfn-test' id='dfn-alert-0-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='log' class='role-test log-test dfn-test' id='dfn-log-1-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='marquee' class='role-test marquee-test dfn-test' id='dfn-marquee-2-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='status' class='role-test status-test dfn-test' id='dfn-status-3-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='timer' class='role-test timer-test dfn-test' id='dfn-timer-4-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='alertdialog' class='role-test alertdialog-test dfn-test' id='dfn-alertdialog-0-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <dfn role='dialog' class='role-test dialog-test dfn-test' id='dfn-dialog-1-test' aria-label='acc name' tabindex='0' ></dfn>
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>

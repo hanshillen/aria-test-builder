@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;input type&#x3D;&#x27;Time&#x27; /&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;input type&#x3D;&#x27;Time&#x27; /&gt;</h1>
+    <p>Last updated: 20 January 2020 17:08:10</p>
+         <p>
+      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong>none</strong>
+    </p>
+  
+     
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='button' class='role-test button-test input-Time-test' id='input-Time-button-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='checkbox' class='role-test checkbox-test input-Time-test' id='input-Time-checkbox-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='gridcell' class='role-test gridcell-test input-Time-test' id='input-Time-gridcell-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='link' class='role-test link-test input-Time-test' id='input-Time-link-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='menuitem' class='role-test menuitem-test input-Time-test' id='input-Time-menuitem-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='menuitemcheckbox' class='role-test menuitemcheckbox-test input-Time-test' id='input-Time-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='menuitemradio' class='role-test menuitemradio-test input-Time-test' id='input-Time-menuitemradio-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='option' class='role-test option-test input-Time-test' id='input-Time-option-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='progressbar' class='role-test progressbar-test input-Time-test' id='input-Time-progressbar-8-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='radio' class='role-test radio-test input-Time-test' id='input-Time-radio-9-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='scrollbar' class='role-test scrollbar-test input-Time-test' id='input-Time-scrollbar-10-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='searchbox' class='role-test searchbox-test input-Time-test' id='input-Time-searchbox-11-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='separator' class='role-test separator-test input-Time-test' id='input-Time-separator-12-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='slider' class='role-test slider-test input-Time-test' id='input-Time-slider-13-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='spinbutton' class='role-test spinbutton-test input-Time-test' id='input-Time-spinbutton-14-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='switch' class='role-test switch-test input-Time-test' id='input-Time-switch-15-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='tab' class='role-test tab-test input-Time-test' id='input-Time-tab-16-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='tabpanel' class='role-test tabpanel-test input-Time-test' id='input-Time-tabpanel-17-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='textbox' class='role-test textbox-test input-Time-test' id='input-Time-textbox-18-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='treeitem' class='role-test treeitem-test input-Time-test' id='input-Time-treeitem-19-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='combobox' class='role-test combobox-test input-Time-test' id='input-Time-combobox-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='grid' class='role-test grid-test input-Time-test' id='input-Time-grid-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='listbox' class='role-test listbox-test input-Time-test' id='input-Time-listbox-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='menu' class='role-test menu-test input-Time-test' id='input-Time-menu-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='menubar' class='role-test menubar-test input-Time-test' id='input-Time-menubar-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='radiogroup' class='role-test radiogroup-test input-Time-test' id='input-Time-radiogroup-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='tablist' class='role-test tablist-test input-Time-test' id='input-Time-tablist-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='tree' class='role-test tree-test input-Time-test' id='input-Time-tree-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='treegrid' class='role-test treegrid-test input-Time-test' id='input-Time-treegrid-8-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='application' class='role-test application-test input-Time-test' id='input-Time-application-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='article' class='role-test article-test input-Time-test' id='input-Time-article-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='cell' class='role-test cell-test input-Time-test' id='input-Time-cell-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='columnheader' class='role-test columnheader-test input-Time-test' id='input-Time-columnheader-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='definition' class='role-test definition-test input-Time-test' id='input-Time-definition-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='directory' class='role-test directory-test input-Time-test' id='input-Time-directory-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='document' class='role-test document-test input-Time-test' id='input-Time-document-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='feed' class='role-test feed-test input-Time-test' id='input-Time-feed-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='figure' class='role-test figure-test input-Time-test' id='input-Time-figure-8-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='group' class='role-test group-test input-Time-test' id='input-Time-group-9-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='heading' class='role-test heading-test input-Time-test' id='input-Time-heading-10-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='img' class='role-test img-test input-Time-test' id='input-Time-img-11-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='list' class='role-test list-test input-Time-test' id='input-Time-list-12-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='listitem' class='role-test listitem-test input-Time-test' id='input-Time-listitem-13-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='math' class='role-test math-test input-Time-test' id='input-Time-math-14-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='none' class='role-test none-test input-Time-test' id='input-Time-none-15-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='note' class='role-test note-test input-Time-test' id='input-Time-note-16-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='presentation' class='role-test presentation-test input-Time-test' id='input-Time-presentation-17-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='row' class='role-test row-test input-Time-test' id='input-Time-row-18-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='rowgroup' class='role-test rowgroup-test input-Time-test' id='input-Time-rowgroup-19-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='rowheader' class='role-test rowheader-test input-Time-test' id='input-Time-rowheader-20-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='separator' class='role-test separator-test input-Time-test' id='input-Time-separator-21-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='table' class='role-test table-test input-Time-test' id='input-Time-table-22-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='term' class='role-test term-test input-Time-test' id='input-Time-term-23-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='toolbar' class='role-test toolbar-test input-Time-test' id='input-Time-toolbar-24-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='tooltip' class='role-test tooltip-test input-Time-test' id='input-Time-tooltip-25-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='banner' class='role-test banner-test input-Time-test' id='input-Time-banner-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='complementary' class='role-test complementary-test input-Time-test' id='input-Time-complementary-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='contentinfo' class='role-test contentinfo-test input-Time-test' id='input-Time-contentinfo-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='form' class='role-test form-test input-Time-test' id='input-Time-form-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='main' class='role-test main-test input-Time-test' id='input-Time-main-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='navigation' class='role-test navigation-test input-Time-test' id='input-Time-navigation-5-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='region' class='role-test region-test input-Time-test' id='input-Time-region-6-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='search' class='role-test search-test input-Time-test' id='input-Time-search-7-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='alert' class='role-test alert-test input-Time-test' id='input-Time-alert-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='log' class='role-test log-test input-Time-test' id='input-Time-log-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='marquee' class='role-test marquee-test input-Time-test' id='input-Time-marquee-2-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='status' class='role-test status-test input-Time-test' id='input-Time-status-3-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='timer' class='role-test timer-test input-Time-test' id='input-Time-timer-4-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='alertdialog' class='role-test alertdialog-test input-Time-test' id='input-Time-alertdialog-0-test' aria-label='acc name' tabindex='0' />
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <input type='time' role='dialog' class='role-test dialog-test input-Time-test' id='input-Time-dialog-1-test' aria-label='acc name' tabindex='0' />
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>

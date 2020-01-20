@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;menuitem type&#x3D;&#x27;radio&#x27;&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;menuitem type&#x3D;&#x27;radio&#x27;&gt;</h1>
+    <p>Last updated: 20 January 2020 17:08:12</p>
+         <p>
+      <a href="https://w3c.github.io/html-aria/#">Allowed Roles</a>: <strong>none</strong>
+    </p>
+  
+     
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='button' class='role-test button-test menuitem-radio-test' id='menuitem-radio-button-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='checkbox' class='role-test checkbox-test menuitem-radio-test' id='menuitem-radio-checkbox-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='gridcell' class='role-test gridcell-test menuitem-radio-test' id='menuitem-radio-gridcell-2-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='link' class='role-test link-test menuitem-radio-test' id='menuitem-radio-link-3-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='menuitem' class='role-test menuitem-test menuitem-radio-test' id='menuitem-radio-menuitem-4-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='menuitemcheckbox' class='role-test menuitemcheckbox-test menuitem-radio-test' id='menuitem-radio-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='menuitemradio' class='role-test menuitemradio-test menuitem-radio-test' id='menuitem-radio-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='option' class='role-test option-test menuitem-radio-test' id='menuitem-radio-option-7-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='progressbar' class='role-test progressbar-test menuitem-radio-test' id='menuitem-radio-progressbar-8-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='radio' class='role-test radio-test menuitem-radio-test' id='menuitem-radio-radio-9-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='scrollbar' class='role-test scrollbar-test menuitem-radio-test' id='menuitem-radio-scrollbar-10-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='searchbox' class='role-test searchbox-test menuitem-radio-test' id='menuitem-radio-searchbox-11-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='separator' class='role-test separator-test menuitem-radio-test' id='menuitem-radio-separator-12-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='slider' class='role-test slider-test menuitem-radio-test' id='menuitem-radio-slider-13-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='spinbutton' class='role-test spinbutton-test menuitem-radio-test' id='menuitem-radio-spinbutton-14-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='switch' class='role-test switch-test menuitem-radio-test' id='menuitem-radio-switch-15-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='tab' class='role-test tab-test menuitem-radio-test' id='menuitem-radio-tab-16-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='tabpanel' class='role-test tabpanel-test menuitem-radio-test' id='menuitem-radio-tabpanel-17-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='textbox' class='role-test textbox-test menuitem-radio-test' id='menuitem-radio-textbox-18-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='treeitem' class='role-test treeitem-test menuitem-radio-test' id='menuitem-radio-treeitem-19-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='combobox' class='role-test combobox-test menuitem-radio-test' id='menuitem-radio-combobox-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='grid' class='role-test grid-test menuitem-radio-test' id='menuitem-radio-grid-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='listbox' class='role-test listbox-test menuitem-radio-test' id='menuitem-radio-listbox-2-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='menu' class='role-test menu-test menuitem-radio-test' id='menuitem-radio-menu-3-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='menubar' class='role-test menubar-test menuitem-radio-test' id='menuitem-radio-menubar-4-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='radiogroup' class='role-test radiogroup-test menuitem-radio-test' id='menuitem-radio-radiogroup-5-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='tablist' class='role-test tablist-test menuitem-radio-test' id='menuitem-radio-tablist-6-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='tree' class='role-test tree-test menuitem-radio-test' id='menuitem-radio-tree-7-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='treegrid' class='role-test treegrid-test menuitem-radio-test' id='menuitem-radio-treegrid-8-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='application' class='role-test application-test menuitem-radio-test' id='menuitem-radio-application-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='article' class='role-test article-test menuitem-radio-test' id='menuitem-radio-article-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='cell' class='role-test cell-test menuitem-radio-test' id='menuitem-radio-cell-2-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='columnheader' class='role-test columnheader-test menuitem-radio-test' id='menuitem-radio-columnheader-3-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='definition' class='role-test definition-test menuitem-radio-test' id='menuitem-radio-definition-4-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='directory' class='role-test directory-test menuitem-radio-test' id='menuitem-radio-directory-5-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='document' class='role-test document-test menuitem-radio-test' id='menuitem-radio-document-6-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='feed' class='role-test feed-test menuitem-radio-test' id='menuitem-radio-feed-7-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='figure' class='role-test figure-test menuitem-radio-test' id='menuitem-radio-figure-8-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='group' class='role-test group-test menuitem-radio-test' id='menuitem-radio-group-9-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='heading' class='role-test heading-test menuitem-radio-test' id='menuitem-radio-heading-10-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='img' class='role-test img-test menuitem-radio-test' id='menuitem-radio-img-11-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='list' class='role-test list-test menuitem-radio-test' id='menuitem-radio-list-12-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='listitem' class='role-test listitem-test menuitem-radio-test' id='menuitem-radio-listitem-13-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='math' class='role-test math-test menuitem-radio-test' id='menuitem-radio-math-14-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='none' class='role-test none-test menuitem-radio-test' id='menuitem-radio-none-15-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='note' class='role-test note-test menuitem-radio-test' id='menuitem-radio-note-16-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='presentation' class='role-test presentation-test menuitem-radio-test' id='menuitem-radio-presentation-17-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='row' class='role-test row-test menuitem-radio-test' id='menuitem-radio-row-18-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='rowgroup' class='role-test rowgroup-test menuitem-radio-test' id='menuitem-radio-rowgroup-19-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='rowheader' class='role-test rowheader-test menuitem-radio-test' id='menuitem-radio-rowheader-20-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='separator' class='role-test separator-test menuitem-radio-test' id='menuitem-radio-separator-21-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='table' class='role-test table-test menuitem-radio-test' id='menuitem-radio-table-22-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='term' class='role-test term-test menuitem-radio-test' id='menuitem-radio-term-23-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='toolbar' class='role-test toolbar-test menuitem-radio-test' id='menuitem-radio-toolbar-24-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='tooltip' class='role-test tooltip-test menuitem-radio-test' id='menuitem-radio-tooltip-25-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='banner' class='role-test banner-test menuitem-radio-test' id='menuitem-radio-banner-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='complementary' class='role-test complementary-test menuitem-radio-test' id='menuitem-radio-complementary-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='contentinfo' class='role-test contentinfo-test menuitem-radio-test' id='menuitem-radio-contentinfo-2-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='form' class='role-test form-test menuitem-radio-test' id='menuitem-radio-form-3-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='main' class='role-test main-test menuitem-radio-test' id='menuitem-radio-main-4-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='navigation' class='role-test navigation-test menuitem-radio-test' id='menuitem-radio-navigation-5-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='region' class='role-test region-test menuitem-radio-test' id='menuitem-radio-region-6-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='search' class='role-test search-test menuitem-radio-test' id='menuitem-radio-search-7-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='alert' class='role-test alert-test menuitem-radio-test' id='menuitem-radio-alert-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='log' class='role-test log-test menuitem-radio-test' id='menuitem-radio-log-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='marquee' class='role-test marquee-test menuitem-radio-test' id='menuitem-radio-marquee-2-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='status' class='role-test status-test menuitem-radio-test' id='menuitem-radio-status-3-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='timer' class='role-test timer-test menuitem-radio-test' id='menuitem-radio-timer-4-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='alertdialog' class='role-test alertdialog-test menuitem-radio-test' id='menuitem-radio-alertdialog-0-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <menuitem type='radio' role='dialog' class='role-test dialog-test menuitem-radio-test' id='menuitem-radio-dialog-1-test' aria-label='acc name' tabindex='0' ></menuitem>
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>

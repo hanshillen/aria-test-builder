@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARIA in HTML - test cases for &lt;figcaption&gt;</title>
+  <style>
+  body {
+    background: #f7f7f5;
+    color: #333;
+    font: 400 105%/1.4 "Work Sans", sans-serif;
+    margin: 1.5em;
+  }
+
+  .clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h4 {
+    clear: both;
+  }
+
+  .widgetDemo {
+    border: 1px solid #BBB;
+    background-color: #EEE;
+    width: 20em;
+    min-height: 10em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    float: left;
+  }
+
+  .role-test {
+    border: 2px solid #000 !important;
+    width: 1em;
+    height: 1em;
+    margin: 5px;
+    display: block;
+    border-radius: 7px;
+  }
+
+  section h4 {
+    padding: 0.5em;
+    border-top: 3px solid #630;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  ul.roleSummaryList li {
+    display: inline;
+  }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #2b7a82;
+    color: #2b7a82;
+    text-decoration: none;
+  }
+
+  [role]:focus,
+  [role]:hover {
+    outline: 3px solid #925e00;
+    outline-offset: 2px;
+  }
+
+  .allowed {
+    color: #009933;
+    font-weight: bold;
+  }
+
+  .notAllowed {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .notAllowed strong {
+    font-size: 120%;
+  }
+  </style>
+</head>
+
+<body>
+  
+    <header>
+    <h1>ARIA in HTML - test cases for &lt;figcaption&gt;</h1>
+    <p>Last updated: 20 January 2020 17:08:04</p>
+     
+    <p>
+      <a href="https://w3c.github.io/html-aria/#figcaption">Allowed Roles</a>:</p>
+    <ul class="roleSummaryList">
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-group">group</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-presentation">presentation</a>
+         , 
+      </li>
+      <li>
+        <a href="https://w3c.github.io/html-aria/#index-aria-none">none</a>
+        
+      </li>
+    </ul>
+ 
+    </header>
+    <main>
+    <h2>Tests</h2>
+    <section class="clearFix">
+      <h3>Widget roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;button&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='button' class='role-test button-test figcaption-test' id='figcaption-button-0-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;checkbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='checkbox' class='role-test checkbox-test figcaption-test' id='figcaption-checkbox-1-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;gridcell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='gridcell' class='role-test gridcell-test figcaption-test' id='figcaption-gridcell-2-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;link&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='link' class='role-test link-test figcaption-test' id='figcaption-link-3-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='menuitem' class='role-test menuitem-test figcaption-test' id='figcaption-menuitem-4-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemcheckbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='menuitemcheckbox' class='role-test menuitemcheckbox-test figcaption-test' id='figcaption-menuitemcheckbox-5-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menuitemradio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='menuitemradio' class='role-test menuitemradio-test figcaption-test' id='figcaption-menuitemradio-6-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;option&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='option' class='role-test option-test figcaption-test' id='figcaption-option-7-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;progressbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='progressbar' class='role-test progressbar-test figcaption-test' id='figcaption-progressbar-8-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radio&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='radio' class='role-test radio-test figcaption-test' id='figcaption-radio-9-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;scrollbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='scrollbar' class='role-test scrollbar-test figcaption-test' id='figcaption-scrollbar-10-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;searchbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='searchbox' class='role-test searchbox-test figcaption-test' id='figcaption-searchbox-11-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='separator' class='role-test separator-test figcaption-test' id='figcaption-separator-12-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;slider&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='slider' class='role-test slider-test figcaption-test' id='figcaption-slider-13-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;spinbutton&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='spinbutton' class='role-test spinbutton-test figcaption-test' id='figcaption-spinbutton-14-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;switch&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='switch' class='role-test switch-test figcaption-test' id='figcaption-switch-15-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tab&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='tab' class='role-test tab-test figcaption-test' id='figcaption-tab-16-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tabpanel&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='tabpanel' class='role-test tabpanel-test figcaption-test' id='figcaption-tabpanel-17-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;textbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='textbox' class='role-test textbox-test figcaption-test' id='figcaption-textbox-18-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treeitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='treeitem' class='role-test treeitem-test figcaption-test' id='figcaption-treeitem-19-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Composite roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;combobox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='combobox' class='role-test combobox-test figcaption-test' id='figcaption-combobox-0-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;grid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='grid' class='role-test grid-test figcaption-test' id='figcaption-grid-1-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listbox&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='listbox' class='role-test listbox-test figcaption-test' id='figcaption-listbox-2-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menu&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='menu' class='role-test menu-test figcaption-test' id='figcaption-menu-3-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;menubar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='menubar' class='role-test menubar-test figcaption-test' id='figcaption-menubar-4-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;radiogroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='radiogroup' class='role-test radiogroup-test figcaption-test' id='figcaption-radiogroup-5-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tablist&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='tablist' class='role-test tablist-test figcaption-test' id='figcaption-tablist-6-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tree&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='tree' class='role-test tree-test figcaption-test' id='figcaption-tree-7-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;treegrid&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='treegrid' class='role-test treegrid-test figcaption-test' id='figcaption-treegrid-8-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Document Structure roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;application&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='application' class='role-test application-test figcaption-test' id='figcaption-application-0-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;article&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='article' class='role-test article-test figcaption-test' id='figcaption-article-1-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;cell&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='cell' class='role-test cell-test figcaption-test' id='figcaption-cell-2-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;columnheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='columnheader' class='role-test columnheader-test figcaption-test' id='figcaption-columnheader-3-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;definition&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='definition' class='role-test definition-test figcaption-test' id='figcaption-definition-4-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;directory&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='directory' class='role-test directory-test figcaption-test' id='figcaption-directory-5-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;document&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='document' class='role-test document-test figcaption-test' id='figcaption-document-6-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;feed&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='feed' class='role-test feed-test figcaption-test' id='figcaption-feed-7-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;figure&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='figure' class='role-test figure-test figcaption-test' id='figcaption-figure-8-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;group&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <figcaption role='group' class='role-test group-test figcaption-test' id='figcaption-group-9-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;heading&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='heading' class='role-test heading-test figcaption-test' id='figcaption-heading-10-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;img&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='img' class='role-test img-test figcaption-test' id='figcaption-img-11-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;list&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='list' class='role-test list-test figcaption-test' id='figcaption-list-12-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;listitem&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='listitem' class='role-test listitem-test figcaption-test' id='figcaption-listitem-13-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;math&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='math' class='role-test math-test figcaption-test' id='figcaption-math-14-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;none&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <figcaption role='none' class='role-test none-test figcaption-test' id='figcaption-none-15-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;note&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='note' class='role-test note-test figcaption-test' id='figcaption-note-16-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;presentation&quot; (
+          <span class="allowed">Allowed</span>
+)
+          
+        </h4>
+        <figcaption role='presentation' class='role-test presentation-test figcaption-test' id='figcaption-presentation-17-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;row&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='row' class='role-test row-test figcaption-test' id='figcaption-row-18-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowgroup&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='rowgroup' class='role-test rowgroup-test figcaption-test' id='figcaption-rowgroup-19-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;rowheader&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='rowheader' class='role-test rowheader-test figcaption-test' id='figcaption-rowheader-20-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;separator&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='separator' class='role-test separator-test figcaption-test' id='figcaption-separator-21-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;table&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='table' class='role-test table-test figcaption-test' id='figcaption-table-22-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;term&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='term' class='role-test term-test figcaption-test' id='figcaption-term-23-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;toolbar&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='toolbar' class='role-test toolbar-test figcaption-test' id='figcaption-toolbar-24-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;tooltip&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='tooltip' class='role-test tooltip-test figcaption-test' id='figcaption-tooltip-25-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Landmark roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;banner&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='banner' class='role-test banner-test figcaption-test' id='figcaption-banner-0-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;complementary&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='complementary' class='role-test complementary-test figcaption-test' id='figcaption-complementary-1-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;contentinfo&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='contentinfo' class='role-test contentinfo-test figcaption-test' id='figcaption-contentinfo-2-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;form&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='form' class='role-test form-test figcaption-test' id='figcaption-form-3-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;main&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='main' class='role-test main-test figcaption-test' id='figcaption-main-4-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;navigation&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='navigation' class='role-test navigation-test figcaption-test' id='figcaption-navigation-5-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;region&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='region' class='role-test region-test figcaption-test' id='figcaption-region-6-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;search&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='search' class='role-test search-test figcaption-test' id='figcaption-search-7-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Live region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alert&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='alert' class='role-test alert-test figcaption-test' id='figcaption-alert-0-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;log&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='log' class='role-test log-test figcaption-test' id='figcaption-log-1-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;marquee&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='marquee' class='role-test marquee-test figcaption-test' id='figcaption-marquee-2-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;status&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='status' class='role-test status-test figcaption-test' id='figcaption-status-3-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;timer&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='timer' class='role-test timer-test figcaption-test' id='figcaption-timer-4-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+    </section>
+    
+        <section class="clearFix">
+      <h3>Window region roles</h3>
+      <section class="widgetDemo">
+        <h4>role=&quot;alertdialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='alertdialog' class='role-test alertdialog-test figcaption-test' id='figcaption-alertdialog-0-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+      <section class="widgetDemo">
+        <h4>role=&quot;dialog&quot; (          <span class="notAllowed">
+            <strong>Not</strong> Allowed
+          </span>
+          )
+          
+        </h4>
+        <figcaption role='dialog' class='role-test dialog-test figcaption-test' id='figcaption-dialog-1-test' aria-label='acc name' tabindex='0' ></figcaption>
+      </section>
+    </section>
+    
+     </main>
+    <span role="htmlLintNeedsOneErrorForOutput"></span>
+</body>
+
+</html>
