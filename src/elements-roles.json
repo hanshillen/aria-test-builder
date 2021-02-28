@@ -113,9 +113,9 @@
   {
     "nodeName": "br",
     "name": "<br>",
-    "markup": "<br></br>",
+    "markup": "<br>",
     "nativeRole": null,
-    "allowedRoles": "all"
+    "allowedRoles": ["presentation", "none"]
   },
   
   "blockquote":
@@ -125,14 +125,6 @@
     "markup": "<blockquote></blockquote>",
     "nativeRole": null,
     "allowedRoles": "all"
-  },
-  "button":
-  {
-    "nodeName": "br",
-    "name": "<br>",
-    "markup": "<br>",
-    "nativeRole": "null,
-    "allowedRoles": ["presentation", "none"]
   },
   "button":
   {
