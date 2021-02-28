@@ -65,6 +65,14 @@
     "nativeRole": null,
     "allowedRoles": ["application"]
   },
+  "autonomous custom element":
+  {
+    "nodeName": "custom-el",
+    "name": "<custom-el>",
+    "markup": "<custom-el></custom-el>",
+    "nativeRole": null,
+    "allowedRoles": "all"
+  },
 
   "b":
   {
@@ -109,6 +117,23 @@
     "nativeRole": null,
     "allowedRoles": "all"
   },
+  
+  "blockquote":
+  {
+    "nodeName": "blockquote",
+    "name": "<blockquote>",
+    "markup": "<blockquote></blockquote>",
+    "nativeRole": null,
+    "allowedRoles": "all"
+  },
+  "button":
+  {
+    "nodeName": "br",
+    "name": "<br>",
+    "markup": "<br>",
+    "nativeRole": "null,
+    "allowedRoles": ["presentation", "none"]
+  },
   "button":
   {
     "nodeName": "button",
@@ -117,14 +142,7 @@
     "nativeRole": "button",
     "allowedRoles": ["checkbox", "link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab"]
   },
-  "buttontypemenu":
-  {
-    "nodeName": "button",
-    "name": "<button type='menu'>",
-    "markup": "<button type='menu'></button>",
-    "nativeRole": "button",
-    "allowedRoles": ["menuitem"]
-  },
+
   "canvas":
   {
     "nodeName": "canvas",
