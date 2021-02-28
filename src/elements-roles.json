@@ -113,7 +113,7 @@
   {
     "nodeName": "br",
     "name": "<br>",
-    "markup": "<br>",
+    "markup": "<br></br>",
     "nativeRole": null,
     "allowedRoles": ["presentation", "none"]
   },
@@ -184,6 +184,14 @@
     "markup": "<table><colgroup {attributeString}><col ><col></colgroup><tr><td></td><td></td></tr></table>",
     "nativeRole": null,
     "allowedRoles": []
+  },
+  "data":
+  {
+    "nodeName": "data",
+    "name": "<data>",
+    "markup": "<data value=0></data>",
+    "nativeRole": null,
+    "allowedRoles": "all"
   },
   "datalist":
   {
@@ -371,6 +379,14 @@
     "markup": "<header></header>",
     "nativeRole": "banner",
     "allowedRoles": ["group", "none", "presentation"]
+  },
+  "hgroup":
+  {
+    "nodeName": "hgroup",
+    "name": "<hgroup>",
+    "markup": "<hgroup></hgroup>",
+    "nativeRole": null,
+    "allowedRoles": "all"
   },
   "hr":
   {
