@@ -298,15 +298,23 @@
     "name": "<fieldset>",
     "markup": "<fieldset></fieldset>",
     "nativeRole": "group",
-    "allowedRoles": ["group", "none", "presentation"]
+    "allowedRoles": ["group", "none", "presentation", "radiogroup"]
   },
-  "figure":
+  "figurenofigcaption":
   {
     "nodeName": "figure",
     "name": "<figure>",
     "markup": "<figure></figure>",
     "nativeRole": "figure",
-    "allowedRoles": ["group", "none", "presentation"]
+    "allowedRoles": "all"
+  },
+  "figurewithfigcaption":
+  {
+    "nodeName": "figure",
+    "name": "<figure>",
+    "markup": "<figure><figcaption></figcaption></figure>",
+    "nativeRole": "figure",
+    "allowedRoles": []
   },
   "footer":
   {
