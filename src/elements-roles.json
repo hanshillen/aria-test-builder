@@ -65,6 +65,14 @@
     "nativeRole": null,
     "allowedRoles": ["application"]
   },
+  "autonomous custom element":
+  {
+    "nodeName": "custom-el",
+    "name": "<custom-el>",
+    "markup": "<custom-el></custom-el>",
+    "nativeRole": null,
+    "allowedRoles": "all"
+  },
 
   "b":
   {
@@ -107,6 +115,15 @@
     "name": "<br>",
     "markup": "<br></br>",
     "nativeRole": null,
+    "allowedRoles": ["presentation", "none"]
+  },
+  
+  "blockquote":
+  {
+    "nodeName": "blockquote",
+    "name": "<blockquote>",
+    "markup": "<blockquote></blockquote>",
+    "nativeRole": null,
     "allowedRoles": "all"
   },
   "button":
@@ -117,14 +134,7 @@
     "nativeRole": "button",
     "allowedRoles": ["checkbox", "link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "switch", "tab"]
   },
-  "buttontypemenu":
-  {
-    "nodeName": "button",
-    "name": "<button type='menu'>",
-    "markup": "<button type='menu'></button>",
-    "nativeRole": "button",
-    "allowedRoles": ["menuitem"]
-  },
+
   "canvas":
   {
     "nodeName": "canvas",
@@ -174,6 +184,14 @@
     "markup": "<table><colgroup {attributeString}><col ><col></colgroup><tr><td></td><td></td></tr></table>",
     "nativeRole": null,
     "allowedRoles": []
+  },
+  "data":
+  {
+    "nodeName": "data",
+    "name": "<data>",
+    "markup": "<data value=0></data>",
+    "nativeRole": null,
+    "allowedRoles": "all"
   },
   "datalist":
   {
@@ -280,15 +298,23 @@
     "name": "<fieldset>",
     "markup": "<fieldset></fieldset>",
     "nativeRole": "group",
-    "allowedRoles": ["group", "none", "presentation"]
+    "allowedRoles": ["group", "none", "presentation", "radiogroup"]
   },
-  "figure":
+  "figurenofigcaption":
   {
     "nodeName": "figure",
     "name": "<figure>",
     "markup": "<figure></figure>",
     "nativeRole": "figure",
-    "allowedRoles": ["group", "none", "presentation"]
+    "allowedRoles": "all"
+  },
+  "figurewithfigcaption":
+  {
+    "nodeName": "figure",
+    "name": "<figure>",
+    "markup": "<figure><figcaption></figcaption></figure>",
+    "nativeRole": "figure",
+    "allowedRoles": []
   },
   "footer":
   {
@@ -361,6 +387,14 @@
     "markup": "<header></header>",
     "nativeRole": "banner",
     "allowedRoles": ["group", "none", "presentation"]
+  },
+  "hgroup":
+  {
+    "nodeName": "hgroup",
+    "name": "<hgroup>",
+    "markup": "<hgroup></hgroup>",
+    "nativeRole": null,
+    "allowedRoles": "all"
   },
   "hr":
   {
